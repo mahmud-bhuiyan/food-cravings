@@ -30,7 +30,7 @@ const Footer = () => {
       </footer>
 
       <footer className="md:flex justify-center md:justify-between footer px-10 py-4 border-t border-base-300">
-        <aside className="mx-auto md:items-center">
+        <aside className="items-center">
           <p>
             <span className="font-semibold">
               &copy;{new Date().getFullYear()}
