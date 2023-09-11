@@ -25,7 +25,7 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="padding-x shadow w-full py-8 absolute z-10">
+    <header className="padding-x w-full py-4">
       <nav className="flex justify-between items-center max-container">
         <a href="/">
           <img src={headerLogo} alt="headerLogo" width={120} height={30} />
@@ -93,7 +93,7 @@ const Navbar = () => {
         </div>
 
         {showMenu && (
-          <div className="bg-white absolute top-20 right-0 mt-2 w-40 shadow-lg rounded text-center border">
+          <div className="bg-white absolute top-20 right-0 mt-2 w-44 mr-4 shadow-lg rounded text-center border lg:hidden">
             <ul>
               {navLinks.map((link, index) => (
                 <li key={index}>
