@@ -12,6 +12,7 @@ const AllChefsPage = () => {
       })
       .catch((error) => console.log(error));
   }, []);
+
   return (
     <section className="max-container">
       <div className="my-8">

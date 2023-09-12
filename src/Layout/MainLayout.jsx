@@ -5,7 +5,7 @@ import Navbar from "../Components/Navbar";
 const MainLayout = () => {
   return (
     <div>
-      <section>
+      <section className="pb-20">
         <Navbar />
       </section>
 
