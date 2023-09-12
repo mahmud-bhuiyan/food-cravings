@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import SectionHeader from "../../Components/SectionHeader";
 
 const AllChefsPage = () => {
   const [chefsData, setChefsData] = useState([]);
@@ -15,6 +16,12 @@ const AllChefsPage = () => {
 
   return (
     <section className="max-container">
+      <SectionHeader
+        text="Our popular chef's"
+        textStyle="font-montserrat !mt-10 mb-4"
+        subText="Find out our their best recipes"
+        divStyle="text-center mb-10"
+      />
       <div className="my-8">
         {chefsData.map((chef, index) => (
           <div

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import SectionHeader from "../../Components/SectionHeader";
 import poster from "../../assets/poster.png";
+import Newsletter from "../../Components/Newsletter";
 
 const Recipes = () => {
   const [recipes, setRecipes] = useState([]);
@@ -51,7 +52,6 @@ const Recipes = () => {
         subText="Find out our best recipes"
         divStyle="text-center mb-10"
       />
-
       {/*search bar */}
       <div className="search-bar flex justify-center">
         <input
@@ -62,8 +62,6 @@ const Recipes = () => {
           className="w-[40%] border rounded py-1 px-2 mb-10"
         />
       </div>
-
-      {/* left side */}
       <div className="lg:grid grid-cols-3 px-2 gap-8">
         <div className="col-span-2">
           {getCurrentPageRecipes().map((recipe, index) => (
@@ -107,12 +105,11 @@ const Recipes = () => {
                     recipe.cooking_method
                   )}
                 </h3>
-                <p></p>
               </div>
             </div>
           ))}
           {/* Pagination Buttons */}
-          <div className="join flex justify-center">
+          <div className="join flex justify-center mb-10">
             {Array.from(
               { length: Math.ceil(filteredRecipes.length / recipesPerPage) },
               (_, i) => (
@@ -159,6 +156,8 @@ const Recipes = () => {
           </div>
         </div>
       </div>
+      {/* Newsletter component */}
+      <Newsletter />
     </section>
   );
 };
