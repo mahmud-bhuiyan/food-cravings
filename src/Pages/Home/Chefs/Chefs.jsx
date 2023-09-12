@@ -28,8 +28,8 @@ const Chefs = () => {
 
   return (
     <section className="px-4 lg:px-2">
-      <SectionHeader text="Check Out Popular Chief&lsquo;s" />
-      
+      <SectionHeader text="Check Out Popular Chief&lsquo;s" textStyle="mb-10" />
+
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 my-8">
         {chefsData.map((chef, index) => (
           <div className="card bg-base-100 drop-shadow-lg" key={index}>

@@ -19,9 +19,10 @@ const TastyRecipes = () => {
     <section className="max-container pb-10 px-4 lg:px-2">
       <SectionHeader
         text="Simple and tasty recipes"
-        style="text-center mt-20 mb-10 pt-12"
+        textStyle="text-center mt-20 pt-12"
+        subText="Try this delicious recipe to make your day"
+        subStyle="text-center mt-6 mb-10"
       />
-
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 my-8">
         {recipes.map((recipe, index) => (
           <div key={index} className="card card-compact bg-base-100 ">

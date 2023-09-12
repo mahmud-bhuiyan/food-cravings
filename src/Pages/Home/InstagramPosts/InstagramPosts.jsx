@@ -1,3 +1,4 @@
+import Button from "../../../Components/Button";
 import SectionHeader from "../../../Components/SectionHeader";
 import { i1 } from "../../../assets/instagram";
 
@@ -6,11 +7,10 @@ const InstagramPosts = () => {
     <section className="max-container px-4 lg:px-2">
       <SectionHeader
         text="@foodcravings on Instagram"
-        style="text-center mt-20  pt-12"
+        textStyle="text-center mt-20  pt-12"
+        subText={"See what our users say about our recipes."}
+        subStyle={"text-center my-6 font-palanquin font font-medium"}
       />
-      <p className="text-center mb-6 font-palanquin font font-medium">
-        See what our users say about our recipes.
-      </p>
       <div className="grid sm:grid-cols-2 md:grid-cols-4  gap-4 pt-6 pb-16">
         <div className="card">
           <figure>
@@ -33,6 +33,10 @@ const InstagramPosts = () => {
           </figure>
         </div>
       </div>
+      <Button
+        text="See Our Instagram"
+        divStyle="flex justify-center pb-16"
+      ></Button>
     </section>
   );
 };

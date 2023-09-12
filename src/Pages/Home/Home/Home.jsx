@@ -1,3 +1,4 @@
+import Newsletter from "../../../Components/Newsletter";
 import Banner from "../Banner/Banner";
 import Categories from "../Categories/Categories";
 import Chefs from "../Chefs/Chefs";
@@ -8,7 +9,7 @@ import TastyRecipes from "../TastyRecipes/TastyRecipes";
 const Home = () => {
   return (
     <div className="min-h-screen">
-      <section className="max-container">
+      <section className="max-container mt-1">
         <Banner />
       </section>
       <section className="max-container">
@@ -25,6 +26,9 @@ const Home = () => {
       </section>
       <section className="bg-sky-100">
         <InstagramPosts />
+      </section>
+      <section className="max-container">
+        <Newsletter />
       </section>
     </div>
   );

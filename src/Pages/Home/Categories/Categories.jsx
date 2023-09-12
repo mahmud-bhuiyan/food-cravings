@@ -38,7 +38,7 @@ const Categories = () => {
 
   return (
     <section className="my-4 mx-2 py-8">
-      <SectionHeader text="Categories" />
+      <SectionHeader text="Categories" textStyle="mb-10" />
 
       <div className="grid xl:grid-cols-6 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
         {categories.map((category, index) => (
@@ -50,7 +50,7 @@ const Categories = () => {
               <img
                 src={category.image}
                 alt={category.name}
-                className="rounded-xl"
+                className="rounded-xl w-16 md:w-24 lg:w-32"
               />
             </figure>
             <div className="card-body items-center text-center">

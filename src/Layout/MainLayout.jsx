@@ -5,7 +5,7 @@ import Navbar from "../Components/Navbar";
 const MainLayout = () => {
   return (
     <div>
-      <section className="pb-20">
+      <section className="pb-20 bg-sky-100">
         <Navbar />
       </section>
 
@@ -13,7 +13,7 @@ const MainLayout = () => {
         <Outlet />
       </section>
 
-      <section className="py-8">
+      <section className="py-8 bg-sky-100">
         <Footer />
       </section>
     </div>

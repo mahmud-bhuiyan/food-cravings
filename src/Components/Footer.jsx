@@ -29,7 +29,7 @@ const Footer = () => {
         </nav>
       </footer>
 
-      <footer className="md:flex justify-center md:justify-between footer px-10 py-4 border-t border-base-300">
+      <footer className="md:flex justify-center md:justify-between footer px-10 pt-8 border-t border-base-300">
         <aside className="items-center">
           <p>
             <span className="font-semibold">
