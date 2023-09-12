@@ -1,6 +1,7 @@
 import Banner from "../Banner/Banner";
 import Categories from "../Categories/Categories";
 import Chefs from "../Chefs/Chefs";
+import Promotions from "../Promotions/Promotions";
 import TastyRecipes from "../TastyRecipes/TastyRecipes";
 
 const Home = () => {
@@ -17,6 +18,9 @@ const Home = () => {
       </section>
       <section className="bg-sky-200">
         <TastyRecipes />
+      </section>
+      <section className="max-container">
+        <Promotions />
       </section>
     </div>
   );

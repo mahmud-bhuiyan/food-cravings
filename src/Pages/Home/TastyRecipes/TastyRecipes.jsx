@@ -16,7 +16,7 @@ const TastyRecipes = () => {
   }, []);
 
   return (
-    <section className="max-container pb-10">
+    <section className="max-container pb-10 px-4 lg:px-2">
       <SectionHeader
         text="Simple and tasty recipes"
         style="text-center mt-20 mb-10 pt-12"
