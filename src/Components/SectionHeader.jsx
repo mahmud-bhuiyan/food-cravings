@@ -1,12 +1,14 @@
-const SectionHeader = ({ subStyle, textStyle, text, subText }) => {
+const SectionHeader = ({ divStyle, subStyle, textStyle, text, subText }) => {
   return (
-    <div>
+    <div className={`${divStyle}`}>
       <h2
-        className={`text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mt-20 ${textStyle}`}
+        className={`text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mt-20 capitalize ${textStyle}`}
       >
         {text}
       </h2>
-      <h3 className={`md:text-lg font-semibold mb-6 ${subStyle}`}>{subText}</h3>
+      <h3 className={`md:text-lg font-semibold mb-6 capitalize ${subStyle}`}>
+        {subText}
+      </h3>
     </div>
   );
 };
