@@ -21,38 +21,38 @@ const AllChefsPage = () => {
             className="card md:card-side bg-base-100 drop-shadow mb-4"
             key={index}
           >
-            <figure
-              style={{ minWidth: "300px", maxWidth: "300px" }}
-              className="pl-8"
-            >
-              <img src={chef.image} alt={chef.name} className="rounded-full" />
-            </figure>
+            <div className="py-4 px-2 md:pl-8 grid sm:flex md:grid gap-4 justify-center">
+              <figure className="w-[270px] sm:w-[350px] md:w-[250px] md:h-[250px]">
+                <img src={chef.image} alt={chef.name} className="rounded-2xl" />
+              </figure>
+              <div className="grid">
+                <h2 className="card-title mt-2 font-montserrat">{chef.name}</h2>
+                <p>Country: {chef.country}</p>
+                <p>Experience: {chef.experience} years</p>
+                <p>Total Recipes: {chef.total_recipes}</p>
+                <p>&#10084;&#65039;: {chef.likes}</p>
+              </div>
+            </div>
             <div className="card-body">
-              <h2 className="card-title">{chef.name}</h2>
-              <p>{chef.bio}</p>
-              <p>Country: {chef.country}</p>
-              <p>Experience: {chef.experience} years</p>
-              <p>Total Recipes: {chef.total_recipes}</p>
-              <p>&#10084;&#65039;: {chef.likes}</p>
-
-              {/* Mapping through chef's recipes */}
-              {/* <h3>Recipes:</h3>
-              <ul>
-                {chef.recipes.map((recipe) => (
-                  <li key={recipe.id}>
-                    <h4>{recipe.recipe_name}</h4>
-                    <img src={recipe.image} alt={recipe.recipe_name} />
-                    <p>Ingredients: {recipe.ingredients.join(", ")}</p>
-                    <p>Cooking Method: {recipe.cooking_method}</p>
+              {chef.recipes.map((recipe, index) => (
+                <div key={index} className="flex space-x-2">
+                  <img
+                    style={{ borderRadius: "0 200px 200px 200px" }}
+                    className="w-[100px] h-[100px]"
+                    src={recipe.image}
+                    alt={recipe.recipe_name}
+                  />
+                  <div>
+                    <h3 className="uppercase">{recipe.recipe_name} --------</h3>
                     <p>Rating: {recipe.rating}</p>
-                  </li>
-                ))}
-              </ul> */}
+                  </div>
+                </div>
+              ))}
 
               <div className="card-actions justify-end">
                 <Link
                   to={`/${chef.name.replace(/\s+/g, "-")}/recipes`}
-                  className="btn btn-primary"
+                  className="btn btn-sm btn-primary"
                 >
                   See all recipes
                 </Link>

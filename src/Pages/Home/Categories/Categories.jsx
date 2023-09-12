@@ -1,3 +1,4 @@
+import SectionHeader from "../../../Components/SectionHeader";
 import {
   breakfast,
   chocolate,
@@ -37,11 +38,7 @@ const Categories = () => {
 
   return (
     <section className="my-4 mx-2 py-8">
-      <div>
-        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6">
-          Categories
-        </h2>
-      </div>
+      <SectionHeader text="Categories" />
 
       <div className="grid xl:grid-cols-6 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
         {categories.map((category, index) => (

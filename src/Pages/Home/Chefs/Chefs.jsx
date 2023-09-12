@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import SectionHeader from "../../../Components/SectionHeader";
 
 const Chefs = () => {
   const [chefsData, setChefsData] = useState([]);
@@ -27,10 +28,8 @@ const Chefs = () => {
 
   return (
     <section className="px-4 lg:px-2">
-      <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold my-6">
-        Check Out Popular Chief&lsquo;s
-      </h2>
-
+      <SectionHeader text="Check Out Popular Chief&lsquo;s" />
+      
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 my-8">
         {chefsData.map((chef, index) => (
           <div className="card bg-base-100 drop-shadow-lg" key={index}>
