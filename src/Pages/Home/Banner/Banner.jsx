@@ -1,10 +1,10 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import { banner4, banner5 } from "../../../assets/banner";
+import { banner1 } from "../../../assets/banner";
 
 const Banner = () => {
   return (
-    <section className="px-4 sm:px-2">
+    <section className="px-4 sm:px-2 mt-8">
       <Carousel
         infiniteLoop={true}
         autoPlay={true}
@@ -13,11 +13,7 @@ const Banner = () => {
         showThumbs={false}
       >
         <div>
-          <img src={banner5} className="rounded-xl" />
-        </div>
-
-        <div>
-          <img src={banner4} className="rounded-xl" />
+          <img src={banner1} className="rounded-xl" />
         </div>
       </Carousel>
     </section>

@@ -13,7 +13,7 @@ const MainLayout = () => {
         <Outlet />
       </section>
 
-      <section className="py-8 bg-sky-100">
+      <section className="py-8 bg-sky-50">
         <Footer />
       </section>
     </div>
