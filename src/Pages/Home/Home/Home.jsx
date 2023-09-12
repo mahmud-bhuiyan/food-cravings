@@ -1,6 +1,7 @@
 import Banner from "../Banner/Banner";
 import Categories from "../Categories/Categories";
 import Chefs from "../Chefs/Chefs";
+import InstagramPosts from "../InstagramPosts/InstagramPosts";
 import Promotions from "../Promotions/Promotions";
 import TastyRecipes from "../TastyRecipes/TastyRecipes";
 
@@ -16,11 +17,14 @@ const Home = () => {
       <section className="max-container">
         <Chefs />
       </section>
-      <section className="bg-sky-200">
+      <section className="bg-sky-100">
         <TastyRecipes />
       </section>
       <section className="max-container">
         <Promotions />
+      </section>
+      <section className="bg-sky-100">
+        <InstagramPosts />
       </section>
     </div>
   );
