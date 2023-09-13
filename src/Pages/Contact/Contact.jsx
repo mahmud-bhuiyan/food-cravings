@@ -3,6 +3,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import contact from "../../assets/contact.png";
 import SectionHeader from "../../Components/SectionHeader";
+import Newsletter from "../../Components/Newsletter";
 
 const Contact = () => {
   const onSubmit = (e) => {
@@ -122,6 +123,7 @@ const Contact = () => {
           <ToastContainer />
         </div>
       </div>
+      <Newsletter />
     </section>
   );
 };
