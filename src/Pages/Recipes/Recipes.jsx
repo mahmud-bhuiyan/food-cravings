@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import SectionHeader from "../../Components/SectionHeader";
 import poster from "../../assets/poster.png";
 import Newsletter from "../../Components/Newsletter";
+import { Helmet } from "react-helmet-async";
 
 const Recipes = () => {
   const [recipes, setRecipes] = useState([]);
@@ -46,6 +47,10 @@ const Recipes = () => {
 
   return (
     <section className="max-container mb-10">
+      <Helmet>
+        <title>Recipes | Food Cravings</title>
+      </Helmet>
+
       <SectionHeader
         text="Recipes"
         textStyle="font-montserrat !mt-10 mb-4"

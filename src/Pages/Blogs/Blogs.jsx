@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import SectionHeader from "../../Components/SectionHeader";
 import Newsletter from "../../Components/Newsletter";
+import { Helmet } from "react-helmet-async";
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
@@ -16,6 +17,10 @@ const Blogs = () => {
 
   return (
     <section className="max-container">
+      <Helmet>
+        <title>Blogs | Food Cravings</title>
+      </Helmet>
+
       <SectionHeader
         text="Blog & Article"
         textStyle="font-montserrat !mt-10 mb-4"

@@ -1,9 +1,14 @@
+import { Helmet } from "react-helmet-async";
 import Newsletter from "../../Components/Newsletter";
 import SectionHeader from "../../Components/SectionHeader";
 
 const AboutUs = () => {
   return (
     <section className="max-container">
+      <Helmet>
+        <title>About Us | Food Cravings</title>
+      </Helmet>
+      
       <SectionHeader
         text={"About Us"}
         textStyle={"mt-10"}

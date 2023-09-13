@@ -2,9 +2,11 @@ import { useState } from "react";
 import { CrossIcon, Hamburger } from "../assets/icons";
 import headerLogo from "../assets/food-cravings.png";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa6";
+import { Link, useLocation } from "react-router-dom"; // Import Link and useLocation from react-router-dom
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const location = useLocation(); // Get the current location from react-router-dom
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
@@ -27,20 +29,24 @@ const Navbar = () => {
   return (
     <header className="padding-x w-full pt-5 pb-4 fixed z-10 bg-white">
       <nav className="flex justify-between items-center max-container">
-        <a href="/">
+        <Link to="/">
+          {" "}
+          {/* Use Link component instead of <a> */}
           <img src={headerLogo} alt="headerLogo" width={120} height={30} />
-        </a>
+        </Link>
 
         <ul className="flex flex-1 justify-center items-center max-lg:hidden gap-4">
           {navLinks?.map((link, index) => (
             <li key={index}>
-              <a
-                href={link.href}
-                className="text-lg text-slate-gray font-montserrat leading-normal mr-4"
+              <Link // Use Link component instead of <a>
+                to={link.href}
+                className={`text-lg text-slate-gray font-montserrat leading-normal mr-4 ${
+                  location.pathname === link.href ? "underline" : ""
+                }`}
                 onClick={closeMenu}
               >
                 {link.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -97,13 +103,13 @@ const Navbar = () => {
             <ul>
               {navLinks.map((link, index) => (
                 <li key={index}>
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.href}
                     className="block px-4 py-2 hover:bg-gray-200 text-slate-gray font-montserrat border-b-2"
                     onClick={closeMenu}
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

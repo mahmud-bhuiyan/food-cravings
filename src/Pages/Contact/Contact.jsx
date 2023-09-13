@@ -4,6 +4,7 @@ import "react-toastify/dist/ReactToastify.css";
 import contact from "../../assets/contact.png";
 import SectionHeader from "../../Components/SectionHeader";
 import Newsletter from "../../Components/Newsletter";
+import { Helmet } from "react-helmet-async";
 
 const Contact = () => {
   const onSubmit = (e) => {
@@ -23,6 +24,10 @@ const Contact = () => {
 
   return (
     <section className="max-container my-10">
+      <Helmet>
+        <title>Contact | Food Cravings</title>
+      </Helmet>
+
       <SectionHeader
         text="Contact Us"
         textStyle="font-montserrat !mt-10 mb-4"

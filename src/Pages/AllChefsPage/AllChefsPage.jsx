@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import SectionHeader from "../../Components/SectionHeader";
+import { Helmet } from "react-helmet-async";
 
 const AllChefsPage = () => {
   const [chefsData, setChefsData] = useState([]);
@@ -16,6 +17,10 @@ const AllChefsPage = () => {
 
   return (
     <section className="max-container">
+      <Helmet>
+        <title>All Chefs | Food Cravings</title>
+      </Helmet>
+
       <SectionHeader
         text="Our popular chef's"
         textStyle="font-montserrat !mt-10 mb-4"
