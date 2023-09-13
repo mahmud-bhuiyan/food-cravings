@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import SectionHeader from "../../Components/SectionHeader";
+import Newsletter from "../../Components/Newsletter";
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
@@ -64,6 +65,7 @@ const Blogs = () => {
           </div>
         ))}
       </div>
+      <Newsletter />
     </section>
   );
 };

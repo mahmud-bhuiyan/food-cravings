@@ -20,8 +20,8 @@ const Navbar = () => {
     { href: "/blogs", label: "Blogs" },
     { href: "/contact", label: "Contact" },
     { href: "/about-us", label: "About us" },
-    { href: "/sign-up", label: "Sign Up" },
-    { href: "/login", label: "Login" },
+    // { href: "/sign-up", label: "Sign Up" },
+    // { href: "/login", label: "Login" },
   ];
 
   return (
