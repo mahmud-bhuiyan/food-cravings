@@ -7,7 +7,7 @@ const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
-    fetch("blogs.json")
+    fetch("https://food-cravings-server-mahmud-bhuiyan.vercel.app/blogs")
       .then((res) => res.json())
       .then((data) => {
         setBlogs(data);

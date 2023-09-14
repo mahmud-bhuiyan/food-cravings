@@ -6,7 +6,7 @@ const Chefs = () => {
   const [chefsData, setChefsData] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/chefs")
+    fetch("https://food-cravings-server-mahmud-bhuiyan.vercel.app/chefs")
       .then((res) => res.json())
       .then((data) => {
         const randomChefs = getRandomChefs(data, 10);

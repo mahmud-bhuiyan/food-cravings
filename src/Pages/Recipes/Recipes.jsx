@@ -11,7 +11,7 @@ const Recipes = () => {
   const recipesPerPage = 10;
 
   useEffect(() => {
-    fetch("recipes.json")
+    fetch("https://food-cravings-server-mahmud-bhuiyan.vercel.app/recipes")
       .then((res) => res.json())
       .then((data) => {
         setRecipes(data);

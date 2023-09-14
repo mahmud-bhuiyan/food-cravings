@@ -6,7 +6,7 @@ const TastyRecipes = () => {
   const [recipes, setRecipes] = useState([]);
 
   useEffect(() => {
-    fetch("recipes.json")
+    fetch("https://food-cravings-server-mahmud-bhuiyan.vercel.app/recipes")
       .then((res) => res.json())
       .then((data) => {
         setRecipes(data);
