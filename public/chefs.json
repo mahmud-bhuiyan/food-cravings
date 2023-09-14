@@ -1,0 +1,1056 @@
+[
+  {
+    "name": "Antonio Carluccio",
+    "country": "Italy",
+    "experience": 10,
+    "total_recipes": 23,
+    "likes": 132,
+    "image": "https://i.ibb.co/10q678x/chef-antonio-carluccio.webp",
+    "bio": "Antonio Carluccio is a seasoned chef who was born and raised in Naples, Italy. He learned the art of cooking from his mother and grandmother, who taught him how to make classic Neapolitan dishes like pizza and pasta. After training in some of Italy's top restaurants, Antonio moved to London to share his passion for Italian cuisine. He specializes in creating modern twists on traditional recipes, using fresh, locally-sourced ingredients.",
+    "recipes": [
+      {
+        "_id": 1,
+        "recipe_name": "Spaghetti Carbonara",
+        "image": "https://i.ibb.co/9gTW7sr/pexels-sam-lion-5710178.jpg",
+        "ingredients": [
+          "spaghetti",
+          "pancetta",
+          "eggs",
+          "Parmesan cheese",
+          "black pepper"
+        ],
+        "cooking_method": "1. Cook the spaghetti according to the package instructions until al dente. \n2. While the pasta is cooking, fry the pancetta in a pan until crispy. \n3. In a bowl, whisk together the eggs, Parmesan cheese, and black pepper. \n4. Drain the pasta and reserve a cup of the cooking water. \n5. Add the pasta to the pan with the pancetta and toss to combine. \n6. Remove the pan from the heat and add the egg mixture, tossing quickly to avoid scrambling the eggs. \n7. Add a splash of the reserved pasta water to the pan to create a creamy sauce. \n8. Serve immediately with extra Parmesan cheese and black pepper on top.",
+        "rating": 4.8
+      },
+      {
+        "_id": 2,
+        "recipe_name": "Fettuccine Alfredo",
+        "image": "https://i.ibb.co/7VhJ2HZ/pexels-engin-akyurt-1435898.jpg",
+        "ingredients": [
+          "fettuccine",
+          "heavy cream",
+          "butter",
+          "Parmesan cheese",
+          "garlic"
+        ],
+        "cooking_method": "1. Cook the fettuccine according to the package instructions until al dente. \n2. While the pasta is cooking, melt the butter in a pan and sauté the garlic until fragrant. \n3. Add the heavy cream to the pan and bring to a simmer. \n4. Reduce the heat and add the Parmesan cheese, stirring constantly until melted. \n5. Drain the pasta and add it to the pan with the sauce. \n6. Toss to combine and coat the pasta with the sauce. \n7. Serve immediately with extra Parmesan cheese on top.",
+        "rating": 4.6
+      },
+      {
+        "_id": 3,
+        "recipe_name": "Caprese Salad",
+        "image": "https://i.ibb.co/1nm70TW/pexels-table-13241736.jpg",
+        "ingredients": [
+          "tomatoes",
+          "fresh mozzarella cheese",
+          "basil leaves",
+          "extra-virgin olive oil",
+          "balsamic vinegar"
+        ],
+        "cooking_method": "1. Slice the tomatoes and fresh mozzarella cheese into 1/4-inch thick rounds. \n2. Arrange the tomato and mozzarella slices on a platter, alternating them. \n3. Sprinkle fresh basil leaves over the top of the salad. \n4. Drizzle extra-virgin olive oil and balsamic vinegar over the salad. \n5. Season with salt and pepper to taste. \n6. Serve immediately.",
+        "rating": 4.5
+      }
+    ]
+  },
+  {
+    "name": "Fabio Viviani",
+    "country": "Italy",
+    "experience": 8,
+    "total_recipes": 19,
+    "likes": 87,
+    "image": "https://i.ibb.co/5K1mMGw/chef-fabio-viviani.webp",
+    "bio": "Fabio Viviani is a talented chef who was born and raised in Florence, Italy. He developed an interest in cooking at a young age and honed his skills by working in some of Italy's top restaurants. Fabio's passion for food and creativity led him to experiment with new recipes, combining traditional Italian flavors with modern techniques. He's known for his inventive pasta dishes and homemade sauces that are bursting with flavor.",
+    "recipes": [
+      {
+        "_id": 20,
+        "recipe_name": "Pesto Pasta with Sun-Dried Tomatoes",
+        "image": "https://i.ibb.co/6sBS2NG/pexels-angele-j-128408.jpg",
+        "ingredients": [
+          "1 pound fusilli pasta",
+          "2 cups fresh basil leaves",
+          "3 garlic cloves",
+          "1/4 cup pine nuts",
+          "1/2 cup olive oil",
+          "1/2 cup grated Parmesan cheese",
+          "1/2 cup sun-dried tomatoes, chopped",
+          "Salt and pepper to taste"
+        ],
+        "cooking_method": "1. Cook pasta according to package instructions. Drain and set aside.\n2. In a food processor, blend basil, garlic, pine nuts, and olive oil until smooth.\n3. Add Parmesan cheese and blend again until smooth. Salt and pepper to taste.\n4. In a large skillet, sauté sun-dried tomatoes until heated through.\n5. Add pasta and pesto sauce to skillet and toss to coat.\n6. Serve hot with additional Parmesan cheese, if desired.",
+        "rating": 4.8
+      },
+      {
+        "_id": 21,
+        "recipe_name": "Braised Beef Short Ribs",
+        "image": "https://i.ibb.co/VJKjYSn/pexels-geraud-pfeiffer-6542794.jpg",
+        "ingredients": [
+          "4 beef short ribs",
+          "Salt and pepper to taste",
+          "2 tablespoons olive oil",
+          "1 onion, chopped",
+          "2 carrots, chopped",
+          "2 celery stalks, chopped",
+          "2 garlic cloves, minced",
+          "1 cup beef broth",
+          "1 cup red wine",
+          "2 sprigs fresh thyme",
+          "2 sprigs fresh rosemary"
+        ],
+        "cooking_method": "1. Preheat oven to 350°F.\n2. Season beef short ribs with salt and pepper.\n3. In a large Dutch oven, heat olive oil over medium-high heat. Sear short ribs on all sides until browned, about 10 minutes.\n4. Remove short ribs and set aside. In the same pot, sauté onion, carrots, celery, and garlic until vegetables are tender.\n5. Add beef broth, red wine, thyme, and rosemary. Bring to a boil.\n6. Return short ribs to the pot and cover with a lid. Bake in the preheated oven for 2 1/2 to 3 hours, or until meat is tender and falls off the bone.\n7. Serve hot with your favorite side dish.",
+        "rating": 4.9
+      },
+      {
+        "_id": 22,
+        "recipe_name": "Tiramisu",
+        "image": "https://i.ibb.co/h8HK88j/pexels-nadin-sh-14846852.jpg",
+        "ingredients": [
+          "6 egg yolks",
+          "3/4 cup sugar",
+          "2/3 cup milk",
+          "1 1/4 cups heavy cream",
+          "1/2 teaspoon vanilla extract",
+          "1 pound mascarpone cheese",
+          "1/4 cup strong brewed espresso",
+          "2 tablespoons coffee liqueur",
+          "24 ladyfingers",
+          "1/4 cup cocoa powder"
+        ],
+        "cooking_method": "1. In a double boiler, whisk egg yolks and sugar until pale yellow.\n2. Add milk and whisk until smooth. Cook over medium heat, stirring constantly, until mixture thickens and coats the back of a spoon.\n3. Remove from heat and let cool to room temperature.\n4. In a large bowl, beat heavy cream and vanilla until stiff peaks form.\n5. In a separate bowl, whisk mascarpone cheese until smooth. Add cooled egg mixture and mix until well combined.\n6. In a small bowl, mix espresso and coffee liqueur.\n7. Dip ladyfingers in espresso mixture and place them in a single layer in a 9x13 inch dish.\n8. Spread half of the mascarpone mixture on top of the ladyfingers. Repeat with another layer of ladyfingers and mascarpone mixture.\n9. Sift cocoa powder over the top layer.\n10. Refrigerate for at least 2 hours, or overnight.\n11. Serve chilled and enjoy!",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "name": "Rocco DiSpirito",
+    "country": "Italy",
+    "experience": 12,
+    "total_recipes": 27,
+    "likes": 165,
+    "image": "https://i.ibb.co/7txPcWt/chef-rocco-dispirito.webp",
+    "bio": "Rocco DiSpirito is a master chef who was born and raised in Italy. He has spent more than a decade working in some of the world's most prestigious restaurants, perfecting his craft and learning new techniques. Rocco's specialty is seafood, and he's known for his ability to create dishes that showcase the natural flavors of fresh fish and shellfish. He's also an expert in making handmade pasta and loves to experiment with new ingredients.",
+    "recipes": [
+      {
+        "_id": 30,
+        "recipe_name": "Cauliflower Pizza Crust",
+        "image": "https://i.ibb.co/PZBjP39/pexels-vincent-rivaud-2147491.jpg",
+        "ingredients": [
+          "1 head cauliflower, chopped",
+          "1 egg, beaten",
+          "1/2 cup shredded mozzarella cheese",
+          "1/2 teaspoon dried oregano",
+          "1/4 teaspoon garlic powder",
+          "Salt and pepper to taste"
+        ],
+        "cooking_method": "1. Preheat oven to 425°F.\n2. In a food processor, pulse cauliflower until it resembles rice.\n3. Microwave cauliflower for 8 minutes, then let cool.\n4. In a large bowl, combine cauliflower, egg, mozzarella cheese, oregano, garlic powder, salt, and pepper.\n5. Mix well and form into a 12-inch round on a baking sheet lined with parchment paper.\n6. Bake in the preheated oven for 15 to 20 minutes, or until crust is golden brown.\n7. Add your favorite pizza toppings and return to the oven for 5 to 10 minutes, or until cheese is melted and bubbly.",
+        "rating": 4.7
+      },
+      {
+        "_id": 31,
+        "recipe_name": "Grilled Ribeye Steak",
+        "image": "https://i.ibb.co/8rtpCkw/pexels-pixabay-236887.jpg",
+        "ingredients": [
+          "1 ribeye steak",
+          "Salt and pepper to taste",
+          "1 tablespoon olive oil",
+          "1 tablespoon chopped fresh rosemary",
+          "1 tablespoon chopped fresh thyme",
+          "1 garlic clove, minced"
+        ],
+        "cooking_method": "1. Preheat grill to high heat.\n2. Season ribeye steak with salt and pepper.\n3. In a small bowl, mix olive oil, rosemary, thyme, and garlic.\n4. Brush mixture onto both sides of the steak.\n5. Place steak on the grill and cook for 3 to 4 minutes on each side, or until desired doneness is reached.\n6. Let steak rest for 5 minutes before slicing and serving.",
+        "rating": 4.8
+      },
+      {
+        "_id": 32,
+        "recipe_name": "Zucchini Fritters",
+        "image": "https://i.ibb.co/tQSJVSK/pexels-morena-vw-6911885.jpg",
+        "ingredients": [
+          "2 zucchinis, grated",
+          "1/2 cup flour",
+          "1/4 cup grated Parmesan cheese",
+          "1/4 teaspoon baking powder",
+          "1/4 teaspoon salt",
+          "1/4 teaspoon black pepper",
+          "1 egg, beaten",
+          "2 tablespoons olive oil"
+        ],
+        "cooking_method": "1. In a large bowl, mix grated zucchini, flour, Parmesan cheese, baking powder, salt, and black pepper.\n2. Add beaten egg and mix until well combined.\n3. Heat olive oil in a large skillet over medium heat.\n4. Drop tablespoonfuls of zucchini mixture into the skillet and cook until golden brown, about 2 to 3 minutes per side.\n5. Remove fritters from skillet and place on a paper towel-lined plate to drain excess oil.\n6. Serve hot with your favorite dipping sauce.",
+        "rating": 4.6
+      }
+    ]
+  },
+  {
+    "name": "Tom Colicchio",
+    "country": "Italy",
+    "experience": 6,
+    "total_recipes": 14,
+    "likes": 52,
+    "image": "https://i.ibb.co/nBp9wrG/chef-tom-colicchio.webp",
+    "bio": "Tom Colicchio is a renowned chef who was born and raised in Italy. He's known for his contemporary American cuisine, which combines traditional techniques with modern flavors. Tom is a strong advocate for using locally-sourced, sustainable ingredients and has been recognized for his efforts to promote responsible food practices. He's also a judge on the hit TV show Top Chef.",
+    "recipes": [
+      {
+        "_id": 31,
+        "recipe_name": "Roasted Chicken with Lemon and Garlic",
+        "image": "https://i.ibb.co/RQ0p7CX/pexels-tim-douglas-6210959.jpg",
+        "ingredients": [
+          "1 whole chicken",
+          "2 lemons, sliced",
+          "1 head of garlic, halved crosswise",
+          "2 sprigs of rosemary",
+          "3 tablespoons olive oil",
+          "Salt and pepper to taste"
+        ],
+        "cooking_method": "1. Preheat oven to 425°F.\n2. Season chicken with salt and pepper inside and out.\n3. Stuff the chicken with lemon slices, garlic, and rosemary.\n4. Rub chicken with olive oil.\n5. Roast in the oven for 1 hour and 20 minutes or until the internal temperature reaches 165°F.\n6. Let chicken rest for 10 minutes before carving.\n7. Serve with roasted vegetables, if desired.",
+        "rating": 4.7
+      },
+      {
+        "_id": 32,
+        "recipe_name": "Seared Scallops with Cauliflower Puree",
+        "image": "https://i.ibb.co/vm22vW3/pexels-ruslan-khmelevsky-7655118.jpg",
+        "ingredients": [
+          "12 sea scallops",
+          "1 head of cauliflower, chopped",
+          "3 tablespoons unsalted butter",
+          "1/2 cup heavy cream",
+          "Salt and pepper to taste"
+        ],
+        "cooking_method": "1. In a large saucepan, bring cauliflower and butter to a boil over medium-high heat.\n2. Reduce heat to low and simmer until cauliflower is tender, about 20 minutes.\n3. Use a blender to puree cauliflower and butter mixture until smooth. Add heavy cream, salt, and pepper to taste.\n4. Heat a skillet over high heat. Season scallops with salt and pepper.\n5. Add scallops to the skillet and sear until golden brown, about 2 minutes per side.\n6. Serve scallops with cauliflower puree.",
+        "rating": 4.9
+      },
+      {
+        "_id": 33,
+        "recipe_name": "Grilled Ribeye Steak",
+        "image": "https://i.ibb.co/VJKjYSn/pexels-geraud-pfeiffer-6542794.jpg",
+        "ingredients": [
+          "1 ribeye steak",
+          "2 cloves of garlic, minced",
+          "2 sprigs of thyme",
+          "2 tablespoons olive oil",
+          "Salt and pepper to taste"
+        ],
+        "cooking_method": "1. Preheat grill to high heat.\n2. Season ribeye steak with salt and pepper.\n3. In a small bowl, mix garlic, thyme, and olive oil together. Rub mixture on both sides of the steak.\n4. Grill steak for 4-5 minutes on each side for medium-rare.\n5. Let steak rest for 5 minutes before slicing.\n6. Serve with your favorite side dish.",
+        "rating": 4.8
+      }
+    ]
+  },
+  {
+    "name": "Gino D'Acampo",
+    "country": "Italy",
+    "experience": 9,
+    "total_recipes": 21,
+    "likes": 104,
+    "image": "https://i.ibb.co/51RfkDb/chef-gino-dacampo.webp",
+    "bio": "Gino D'Acampo is a charismatic chef who was born and raised in Napoli, Italy. He started his career as a chef at the young age of 19 and quickly made a name for himself in the UK. Gino's cooking is inspired by his Italian heritage, and he loves to create simple, flavorful dishes using fresh, seasonal ingredients. He's also a popular TV personality, having appeared on several cooking shows in the UK and Italy.",
+    "recipes": [
+      {
+        "_id": 31,
+        "recipe_name": "Spaghetti Carbonara",
+        "image": "https://i.ibb.co/Hqmx5mh/pexels-polina-tankilevitch-4518843.jpg",
+        "ingredients": [
+          "14 oz spaghetti",
+          "4 large egg yolks",
+          "1 cup grated Pecorino Romano cheese",
+          "6 oz pancetta or guanciale, diced",
+          "2 cloves garlic, minced",
+          "Salt and black pepper to taste"
+        ],
+        "cooking_method": "1. Cook spaghetti according to package instructions. Drain and reserve 1 cup of pasta water.\n2. In a large bowl, whisk together egg yolks, Pecorino Romano cheese, and black pepper.\n3. In a large skillet, cook pancetta or guanciale over medium heat until crisp. Add garlic and cook until fragrant.\n4. Remove skillet from heat and add cooked spaghetti. Toss to coat.\n5. Gradually pour in the egg mixture, stirring constantly, until the spaghetti is coated in a creamy sauce. If the pasta seems too dry, add reserved pasta water 1 tablespoon at a time.\n6. Serve hot, garnished with additional Pecorino Romano cheese and black pepper, if desired.",
+        "rating": 4.7
+      },
+      {
+        "_id": 32,
+        "recipe_name": "Chicken Parmigiana",
+        "image": "https://i.ibb.co/h8HK88j/pexels-nadin-sh-14846852.jpg",
+        "ingredients": [
+          "4 chicken breasts",
+          "1 cup all-purpose flour",
+          "3 large eggs, beaten",
+          "2 cups panko breadcrumbs",
+          "1/2 cup grated Parmesan cheese",
+          "Salt and black pepper to taste",
+          "1/4 cup olive oil",
+          "2 cups tomato sauce",
+          "1 cup shredded mozzarella cheese"
+        ],
+        "cooking_method": "1. Preheat oven to 400°F.\n2. Season chicken breasts with salt and pepper.\n3. Place flour, beaten eggs, and panko breadcrumbs mixed with Parmesan cheese in three separate shallow dishes.\n4. Dredge each chicken breast in flour, shaking off excess. Dip in beaten eggs, then coat in panko mixture, pressing crumbs onto chicken to adhere.\n5. Heat olive oil in a large skillet over medium-high heat. Cook chicken until golden brown, about 3 minutes per side. Remove from skillet and drain on paper towels.\n6. Spread tomato sauce on the bottom of a large baking dish. Place chicken on top of the sauce. Spoon additional sauce on top of the chicken and sprinkle with mozzarella cheese.\n7. Bake for 15-20 minutes, or until cheese is melted and bubbly.\n8. Serve hot with your favorite side dish.",
+        "rating": 4.9
+      },
+      {
+        "_id": 33,
+        "recipe_name": "Minestrone Soup",
+        "image": "https://i.ibb.co/DK5wDL5/pexels-nadin-sh-14822890.jpg",
+        "ingredients": [
+          "1 onion, chopped",
+          "2 carrots, chopped",
+          "2 celery stalks, chopped",
+          "2 garlic cloves, minced",
+          "1/4 cup olive oil",
+          "1 can (14 oz) diced tomatoes",
+          "6 cups chicken or vegetable broth",
+          "1 can (14 oz) cannellini beans, drained",
+          "1 small zucchini, diced",
+          "1 small yellow squash, diced",
+          "1 cup small pasta (such as ditalini or elbow macaroni)",
+          "1/2 cup grated Parmesan cheese",
+          "Salt and black pepper to taste"
+        ],
+        "cooking_method": "1. In a large pot, heat olive oil over medium heat. Add onion, carrots, celery, and garlic and cook until vegetables are tender, about 10 minutes.\n2. Add diced tomatoes, broth, cannellini beans, zucchini, and yellow squash. Bring to a simmer and cook until vegetables are tender, about 20-25 minutes.\n3. Add pasta and cook until al dente, according to package instructions.\n4. Season with salt and black pepper to taste.\n5. Serve hot, garnished with Parmesan cheese and additional black pepper, if desired.",
+        "rating": 4.5
+      }
+    ]
+  },
+  {
+    "name": "Salvatore Cuomo",
+    "country": "Italy",
+    "experience": 7,
+    "total_recipes": 17,
+    "likes": 73,
+    "image": "https://i.ibb.co/PtQqcfZ/chef-salvatore-cuomo.webp",
+    "bio": "Salvatore Cuomo is a talented chef who was born and raised in Naples, Italy. He learned the art of cooking from his family, who owned a restaurant in Naples. Salvatore's passion for food and creativity led him to experiment with new recipes, combining traditional Neapolitan flavors with modern techniques. He's known for his inventive pizza dishes and homemade sauces that are bursting with flavor. Salvatore has also been recognized for his efforts to promote authentic Neapolitan pizza around the world.",
+    "recipes": [
+      {
+        "_id": 34,
+        "recipe_name": "Margherita Pizza",
+        "image": "https://i.ibb.co/WzFB6Bg/pexels-kampus-production-6605214.jpg",
+        "ingredients": [
+          "Pizza dough",
+          "1/2 cup tomato sauce",
+          "8 oz fresh mozzarella cheese, sliced",
+          "1/4 cup fresh basil leaves",
+          "1/4 cup extra-virgin olive oil",
+          "Salt and black pepper to taste"
+        ],
+        "cooking_method": "1. Preheat the oven to 500°F.\n2. Roll out the pizza dough on a floured surface until it is 12 inches in diameter.\n3. Spread the tomato sauce evenly over the dough, leaving a 1/2-inch border around the edge.\n4. Arrange the mozzarella cheese slices on top of the sauce.\n5. Drizzle the olive oil over the pizza and sprinkle with salt and black pepper.\n6. Bake the pizza for 10-12 minutes, or until the crust is golden brown and the cheese is melted and bubbly.\n7. Remove the pizza from the oven and let it cool for a few minutes.\n8. Sprinkle fresh basil leaves over the pizza and slice into wedges.\n9. Serve hot.",
+        "rating": 4.8
+      },
+      {
+        "_id": 35,
+        "recipe_name": "Pasta alla Norma",
+        "image": "https://i.ibb.co/Rp41B4p/pexels-marilena-baltzaki-15082407.jpg",
+        "ingredients": [
+          "1 lb spaghetti",
+          "1 eggplant, cubed",
+          "4 garlic cloves, minced",
+          "1/4 cup olive oil",
+          "1 can (14 oz) diced tomatoes",
+          "1/4 cup fresh basil leaves, chopped",
+          "1/2 cup grated ricotta salata cheese",
+          "Salt and black pepper to taste"
+        ],
+        "cooking_method": "1. Cook spaghetti according to package instructions. Drain and set aside.\n2. In a large skillet, heat olive oil over medium-high heat. Add eggplant and cook until browned, stirring occasionally.\n3. Add garlic and cook until fragrant.\n4. Stir in diced tomatoes and bring to a simmer. Cook for 10-15 minutes, or until the sauce has thickened.\n5. Season the sauce with salt and black pepper to taste.\n6. Toss the cooked spaghetti with the sauce until well coated.\n7. Sprinkle with fresh basil leaves and grated ricotta salata cheese.\n8. Serve hot.",
+        "rating": 4.6
+      },
+      {
+        "_id": 36,
+        "recipe_name": "Bistecca alla Fiorentina",
+        "image": "https://i.ibb.co/VJQSSZ2/pexels-malidate-van-769289.jpg",
+        "ingredients": [
+          "2 large T-bone steaks, about 1 1/2 inches thick",
+          "2 cloves garlic, minced",
+          "1/4 cup olive oil",
+          "2 tbsp fresh rosemary leaves, chopped",
+          "Salt and black pepper to taste"
+        ],
+        "cooking_method": "1. Preheat a grill to high heat.\n2. Rub the steaks with garlic, olive oil, and chopped rosemary.\n3. Season the steaks with salt and black pepper to taste.\n4. Grill the steaks for 6-7 minutes per side, or until they are cooked to your desired level of doneness.\n5. Remove the steaks from the grill and let them rest for 5 minutes before slicing and serving.\n6. Serve hot with your choice of sides.",
+        "rating": 4.9
+      }
+    ]
+  },
+  {
+    "name": "Vikas Khanna",
+    "country": "India",
+    "experience": 22,
+    "total_recipes": 70,
+    "likes": 550,
+    "image": "https://i.ibb.co/F09Fjz9/Vikas-Khanna.png",
+    "bio": "Vikas Khanna is a renowned Indian chef with over 22 years of culinary experience. He is known for his innovative approach to Indian cuisine and his passion for creating delectable dishes that combine tradition and modernity.",
+    "recipes": [
+      {
+        "_id": 123456,
+        "recipe_name": "Butter Chicken",
+        "image": "https://i.ibb.co/9gTW7sr/pexels-sam-lion-5710178.jpg",
+        "ingredients": ["Chicken", "Yogurt", "Tomato sauce", "Butter", "Cream"],
+        "cooking_method": "1. Marinate chicken in yogurt and spices. \n2. Cook in tomato sauce and butter. \n3. Finish with cream. \n4. Savor the rich flavors.",
+        "rating": 4.9
+      },
+      {
+        "_id": 234567,
+        "recipe_name": "Paneer Tikka",
+        "image": "https://i.ibb.co/7VhJ2HZ/pexels-engin-akyurt-1435898.jpg",
+        "ingredients": [
+          "Paneer (Indian cottage cheese)",
+          "Yogurt",
+          "Spices",
+          "Bell peppers",
+          "Onions"
+        ],
+        "cooking_method": "1. Marinate paneer in yogurt and spices. \n2. Grill with bell peppers and onions. \n3. Enjoy the smoky goodness.",
+        "rating": 4.8
+      },
+      {
+        "_id": 345678,
+        "recipe_name": "Gulab Jamun",
+        "image": "https://i.ibb.co/1nm70TW/pexels-table-13241736.jpg",
+        "ingredients": [
+          "Khoya (milk solids)",
+          "Sugar",
+          "Cardamom",
+          "Rosewater",
+          "Saffron"
+        ],
+        "cooking_method": "1. Make dough with khoya. \n2. Fry and soak in sugar syrup. \n3. Flavor with cardamom, rosewater, and saffron. \n4. Relish the sweet treat.",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "name": "Sanjeev Kapoor",
+    "country": "India",
+    "experience": 30,
+    "total_recipes": 90,
+    "likes": 700,
+    "image": "https://i.ibb.co/q1brnrD/Sanjeev-Kapoor.png",
+    "bio": "Sanjeev Kapoor is an iconic Indian chef with an incredible culinary journey spanning 30 years. He is celebrated for his contributions to Indian cuisine and his role in popularizing it worldwide.",
+    "recipes": [
+      {
+        "_id": 456789,
+        "recipe_name": "Dosa",
+        "image": "https://i.ibb.co/RQ0p7CX/pexels-tim-douglas-6210959.jpg",
+        "ingredients": [
+          "Rice",
+          "Urad dal (black gram)",
+          "Fenugreek seeds",
+          "Salt",
+          "Oil"
+        ],
+        "cooking_method": "1. Soak rice, dal, and fenugreek seeds. \n2. Blend into a batter and ferment. \n3. Make thin crepes and serve with chutney. \n4. Enjoy a South Indian classic.",
+        "rating": 4.9
+      },
+      {
+        "_id": 567890,
+        "recipe_name": "Palak Paneer",
+        "image": "https://i.ibb.co/vm22vW3/pexels-ruslan-khmelevsky-7655118.jpg",
+        "ingredients": [
+          "Paneer (Indian cottage cheese)",
+          "Spinach",
+          "Tomatoes",
+          "Spices",
+          "Cream"
+        ],
+        "cooking_method": "1. Sauté spinach and tomatoes with spices. \n2. Blend into a smooth sauce. \n3. Add paneer and cream. \n4. Savor the creamy spinach delight.",
+        "rating": 4.8
+      },
+      {
+        "_id": 678901,
+        "recipe_name": "Mango Lassi",
+        "image": "https://i.ibb.co/VJKjYSn/pexels-geraud-pfeiffer-6542794.jpg",
+        "ingredients": ["Mangoes", "Yogurt", "Sugar", "Cardamom", "Ice"],
+        "cooking_method": "1. Blend mangoes, yogurt, sugar, cardamom, and ice. \n2. Serve the refreshing mango yogurt drink. \n3. Beat the heat!",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "name": "John Smith",
+    "country": "Uk",
+    "experience": 18,
+    "total_recipes": 45,
+    "likes": 350,
+    "image": "https://i.ibb.co/whQK0Rh/John-Smith.png",
+    "bio": "John Smith is a renowned American chef known for his passion for American comfort food. With over 18 years of experience, he specializes in creating classic dishes with a modern twist.",
+    "recipes": [
+      {
+        "_id": 987654,
+        "recipe_name": "Classic Cheeseburger",
+        "image": "https://i.ibb.co/Hqmx5mh/pexels-polina-tankilevitch-4518843.jpg",
+        "ingredients": [
+          "Ground beef",
+          "American cheese",
+          "Burger buns",
+          "Lettuce",
+          "Tomato"
+        ],
+        "cooking_method": "1. Form beef into patties and grill. \n2. Add cheese and melt. \n3. Assemble in buns with lettuce and tomato. \n4. Serve hot with fries.",
+        "rating": 4.9
+      },
+      {
+        "_id": 876543,
+        "recipe_name": "Fried Chicken",
+        "image": "https://i.ibb.co/h8HK88j/pexels-nadin-sh-14846852.jpg",
+        "ingredients": [
+          "Chicken pieces",
+          "Buttermilk",
+          "Flour",
+          "Spices",
+          "Vegetable oil"
+        ],
+        "cooking_method": "1. Soak chicken in buttermilk. \n2. Coat with seasoned flour. \n3. Deep fry until golden. \n4. Serve with coleslaw and biscuits.",
+        "rating": 4.8
+      },
+      {
+        "_id": 765432,
+        "recipe_name": "Macaroni and Cheese",
+        "image": "https://i.ibb.co/DK5wDL5/pexels-nadin-sh-14822890.jpg",
+        "ingredients": [
+          "Macaroni",
+          "Cheddar cheese",
+          "Milk",
+          "Butter",
+          "Breadcrumbs"
+        ],
+        "cooking_method": "1. Cook macaroni and make cheese sauce. \n2. Mix and top with breadcrumbs. \n3. Bake until bubbly. \n4. Enjoy the ultimate comfort food.",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "name": "Yuki Nakamura",
+    "country": "Japan",
+    "experience": 20,
+    "total_recipes": 50,
+    "likes": 480,
+    "image": "https://i.ibb.co/HDQskbx/Yuki-Nakamura.png",
+    "bio": "Yuki Nakamura is a talented Japanese chef with 20 years of culinary expertise. She is known for her contemporary fusion of Japanese and international flavors.",
+    "recipes": [
+      {
+        "_id": 654321,
+        "recipe_name": "Sushi Burrito",
+        "image": "https://i.ibb.co/WzFB6Bg/pexels-kampus-production-6605214.jpg",
+        "ingredients": [
+          "Sushi rice",
+          "Nori seaweed sheets",
+          "Assorted fillings (e.g., avocado, salmon, cucumber)",
+          "Soy sauce",
+          "Wasabi"
+        ],
+        "cooking_method": "1. Lay out a nori sheet. \n2. Spread sushi rice and add assorted fillings. \n3. Roll into a burrito shape. \n4. Serve with soy sauce and wasabi. \n5. Experience the sushi burrito fusion.",
+        "rating": 4.9
+      },
+      {
+        "_id": 543210,
+        "recipe_name": "Teriyaki Chicken",
+        "image": "https://i.ibb.co/Rp41B4p/pexels-marilena-baltzaki-15082407.jpg",
+        "ingredients": [
+          "Chicken thighs",
+          "Soy sauce",
+          "Mirin",
+          "Sugar",
+          "Sesame seeds"
+        ],
+        "cooking_method": "1. Marinate chicken in teriyaki sauce. \n2. Grill or pan-fry until caramelized. \n3. Sprinkle with sesame seeds. \n4. Enjoy the sweet and savory teriyaki chicken.",
+        "rating": 4.8
+      },
+      {
+        "_id": 432109,
+        "recipe_name": "Matcha Latte",
+        "image": "https://i.ibb.co/VJQSSZ2/pexels-malidate-van-769289.jpg",
+        "ingredients": [
+          "Matcha powder",
+          "Hot water",
+          "Milk",
+          "Honey",
+          "Whipped cream"
+        ],
+        "cooking_method": "1. Whisk matcha powder with hot water. \n2. Heat milk and honey. \n3. Combine matcha and milk. \n4. Top with whipped cream. \n5. Enjoy a comforting matcha latte.",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "name": "Hiroshi Tanaka",
+    "country": "Japan",
+    "experience": 25,
+    "total_recipes": 60,
+    "likes": 500,
+    "image": "https://i.ibb.co/7NrcKtP/Hiroshi-Tanaka.png",
+    "bio": "Hiroshi Tanaka is a highly skilled Japanese chef with 25 years of experience. He specializes in traditional Japanese cuisine, with a focus on sushi and sashimi.",
+    "recipes": [
+      {
+        "_id": 987654,
+        "recipe_name": "Sushi Nigiri",
+        "image": "https://i.ibb.co/9gTW7sr/pexels-sam-lion-5710178.jpg",
+        "ingredients": [
+          "Sushi rice",
+          "Fish slices (e.g., tuna, salmon, shrimp)",
+          "Wasabi",
+          "Soy sauce",
+          "Pickled ginger"
+        ],
+        "cooking_method": "1. Prepare sushi rice and shape into small oblong pieces. \n2. Top with fish slices and a dab of wasabi. \n3. Serve with soy sauce and pickled ginger. \n4. Enjoy exquisite sushi nigiri.",
+        "rating": 4.9
+      },
+      {
+        "_id": 876543,
+        "recipe_name": "Miso Soup",
+        "image": "https://i.ibb.co/7VhJ2HZ/pexels-engin-akyurt-1435898.jpg",
+        "ingredients": [
+          "Dashi stock",
+          "Miso paste",
+          "Tofu cubes",
+          "Seaweed (nori)",
+          "Green onions"
+        ],
+        "cooking_method": "1. Make dashi stock and add miso paste. \n2. Add tofu cubes, seaweed, and green onions. \n3. Simmer gently. \n4. Enjoy the comforting flavors of miso soup.",
+        "rating": 4.8
+      },
+      {
+        "_id": 765432,
+        "recipe_name": "Tempura",
+        "image": "https://i.ibb.co/1nm70TW/pexels-table-13241736.jpg",
+        "ingredients": [
+          "Assorted vegetables (e.g., sweet potatoes, mushrooms)",
+          "Shrimp",
+          "Tempura batter",
+          "Vegetable oil",
+          "Dipping sauce"
+        ],
+        "cooking_method": "1. Dip vegetables and shrimp in tempura batter. \n2. Deep fry until golden. \n3. Serve with dipping sauce. \n4. Savor the crispy tempura goodness.",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "name": "Emily Clarke",
+    "country": "UK",
+    "experience": 14,
+    "total_recipes": 38,
+    "likes": 280,
+    "image": "https://i.ibb.co/yFjX3mR/Emily-Clarke.png",
+    "bio": "Emily Clarke is a talented American chef who specializes in farm-to-table cuisine. With 14 years of experience, she is passionate about using locally sourced ingredients to create delicious and sustainable dishes.",
+    "recipes": [
+      {
+        "_id": 654321,
+        "recipe_name": "Quinoa Salad",
+        "image": "https://i.ibb.co/RQ0p7CX/pexels-tim-douglas-6210959.jpg",
+        "ingredients": [
+          "Quinoa",
+          "Mixed greens",
+          "Cherry tomatoes",
+          "Cucumber",
+          "Lemon vinaigrette"
+        ],
+        "cooking_method": "1. Cook quinoa and toss with greens, tomatoes, and cucumber. \n2. Drizzle with lemon vinaigrette. \n3. Enjoy a healthy and refreshing salad.",
+        "rating": 4.9
+      },
+      {
+        "_id": 543210,
+        "recipe_name": "Grilled Vegetable Platter",
+        "image": "https://i.ibb.co/vm22vW3/pexels-ruslan-khmelevsky-7655118.jpg",
+        "ingredients": [
+          "Assorted vegetables",
+          "Olive oil",
+          "Herbs",
+          "Balsamic glaze"
+        ],
+        "cooking_method": "1. Grill vegetables with olive oil and herbs. \n2. Drizzle with balsamic glaze. \n3. Serve as a colorful and flavorful platter.",
+        "rating": 4.8
+      },
+      {
+        "_id": 432109,
+        "recipe_name": "Blueberry Pancakes",
+        "image": "https://i.ibb.co/VJKjYSn/pexels-geraud-pfeiffer-6542794.jpg",
+        "ingredients": [
+          "Pancake mix",
+          "Blueberries",
+          "Maple syrup",
+          "Whipped cream"
+        ],
+        "cooking_method": "1. Make pancake batter and add blueberries. \n2. Cook until golden. \n3. Serve with maple syrup and whipped cream. \n4. Enjoy a sweet breakfast treat.",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "name": "Rajesh Malhotra",
+    "country": "India",
+    "experience": 15,
+    "total_recipes": 30,
+    "likes": 200,
+    "image": "https://i.ibb.co/zPkDKT3/chef-rajesh-malhotra.png",
+    "bio": "Rajesh Malhotra is a highly respected Indian chef with a passion for traditional Indian cuisine. He has spent over a decade mastering the art of Indian cooking, specializing in regional dishes from North India. Rajesh is known for his expertise in creating flavorful curries and tandoori delights.",
+    "recipes": [
+      {
+        "_id": 123456,
+        "recipe_name": "Butter Chicken",
+        "image": "https://i.ibb.co/Hqmx5mh/pexels-polina-tankilevitch-4518843.jpg",
+        "ingredients": [
+          "500g chicken",
+          "Butter chicken sauce",
+          "Cream",
+          "Kasuri methi",
+          "Fresh coriander leaves"
+        ],
+        "cooking_method": "1. Marinate chicken and grill until cooked. \n2. Simmer in butter chicken sauce and cream. \n3. Add kasuri methi and garnish with coriander. \n4. Serve hot with naan or rice.",
+        "rating": 4.8
+      },
+      {
+        "_id": 234567,
+        "recipe_name": "Paneer Tikka",
+        "image": "https://i.ibb.co/h8HK88j/pexels-nadin-sh-14846852.jpg",
+        "ingredients": [
+          "250g paneer",
+          "Yogurt",
+          "Tandoori masala",
+          "Bell peppers",
+          "Onions"
+        ],
+        "cooking_method": "1. Marinate paneer in yogurt and tandoori masala. \n2. Skewer with bell peppers and onions. \n3. Grill until charred. \n4. Serve hot with mint chutney.",
+        "rating": 4.7
+      },
+      {
+        "_id": 345678,
+        "recipe_name": "Aloo Gobi",
+        "image": "https://i.ibb.co/DK5wDL5/pexels-nadin-sh-14822890.jpg",
+        "ingredients": [
+          "2 potatoes",
+          "1 cauliflower",
+          "Tomatoes",
+          "Turmeric",
+          "Cumin seeds"
+        ],
+        "cooking_method": "1. Sauté cumin seeds, add potatoes and cauliflower. \n2. Stir in tomatoes, turmeric, and water. \n3. Cook until vegetables are tender. \n4. Serve with roti or rice.",
+        "rating": 4.6
+      }
+    ]
+  },
+  {
+    "name": "Meera Kapoor",
+    "country": "India",
+    "experience": 12,
+    "total_recipes": 25,
+    "likes": 180,
+    "image": "https://i.ibb.co/DM2dpJg/chef-Meera-Kapoor.png",
+    "bio": "Meera Kapoor is a versatile Indian chef known for her fusion cuisine, blending Indian flavors with international influences. She enjoys experimenting with innovative recipes while staying true to her Indian roots.",
+    "recipes": [
+      {
+        "_id": 456789,
+        "recipe_name": "Tandoori Salmon",
+        "image": "https://i.ibb.co/WzFB6Bg/pexels-kampus-production-6605214.jpg",
+        "ingredients": [
+          "Salmon fillets",
+          "Tandoori marinade",
+          "Yogurt",
+          "Lemon juice",
+          "Cilantro"
+        ],
+        "cooking_method": "1. Marinate salmon in tandoori marinade and yogurt. \n2. Grill until salmon flakes easily. \n3. Drizzle with lemon juice and garnish with cilantro. \n4. Serve with rice or naan.",
+        "rating": 4.9
+      },
+      {
+        "_id": 567890,
+        "recipe_name": "Mango Chutney",
+        "image": "https://i.ibb.co/Rp41B4p/pexels-marilena-baltzaki-15082407.jpg",
+        "ingredients": ["Ripe mangoes", "Sugar", "Vinegar", "Spices", "Ginger"],
+        "cooking_method": "1. Cook mangoes, sugar, vinegar, and spices until thick. \n2. Add minced ginger. \n3. Cool and store in jars. \n4. Serve as a condiment with Indian dishes.",
+        "rating": 4.8
+      },
+      {
+        "_id": 678901,
+        "recipe_name": "Chicken Korma",
+        "image": "https://i.ibb.co/VJQSSZ2/pexels-malidate-van-769289.jpg",
+        "ingredients": [
+          "500g chicken",
+          "Korma paste",
+          "Cream",
+          "Cashews",
+          "Saffron"
+        ],
+        "cooking_method": "1. Cook chicken in korma paste. \n2. Add cream and ground cashews. \n3. Garnish with saffron. \n4. Serve with naan or pulao.",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "name": "Pankaj Bhadouria",
+    "country": "India",
+    "experience": 8,
+    "total_recipes": 20,
+    "likes": 150,
+    "image": "https://i.ibb.co/9cQqkXn/chef-Pankaj-Bhadouria.png",
+    "bio": "Pankaj Bhadouria is a young and innovative Indian chef known for her modern take on traditional Indian dishes. She combines local ingredients with global techniques to create exciting and visually stunning recipes.",
+    "recipes": [
+      {
+        "_id": 789012,
+        "recipe_name": "Mango Lassi",
+        "image": "https://i.ibb.co/9gTW7sr/pexels-sam-lion-5710178.jpg",
+        "ingredients": [
+          "2 ripe mangoes",
+          "1 cup yogurt",
+          "2 tbsp honey",
+          "1/2 tsp cardamom",
+          "Crushed ice"
+        ],
+        "cooking_method": "1. Blend mangoes, yogurt, honey, and cardamom. \n2. Add crushed ice and blend until smooth. \n3. Serve chilled in tall glasses.",
+        "rating": 4.7
+      },
+      {
+        "_id": 890123,
+        "recipe_name": "Quinoa Biryani",
+        "image": "https://i.ibb.co/7VhJ2HZ/pexels-engin-akyurt-1435898.jpg",
+        "ingredients": [
+          "1 cup quinoa",
+          "Mixed vegetables",
+          "Biryani spices",
+          "Yogurt",
+          "Fried onions",
+          "Saffron strands"
+        ],
+        "cooking_method": "1. Sauté biryani spices and vegetables. \n2. Add quinoa and yogurt. \n3. Top with fried onions and saffron. \n4. Cook until quinoa is fluffy. \n5. Serve hot with raita.",
+        "rating": 4.6
+      },
+      {
+        "_id": 901234,
+        "recipe_name": "Egg Curry",
+        "image": "https://i.ibb.co/1nm70TW/pexels-table-13241736.jpg",
+        "ingredients": [
+          "Boiled eggs",
+          "Onions",
+          "Tomatoes",
+          "Spices",
+          "Fresh cilantro"
+        ],
+        "cooking_method": "1. Sauté onions, add tomatoes and spices. \n2. Add boiled eggs and simmer. \n3. Garnish with fresh cilantro. \n4. Serve with rice or roti.",
+        "rating": 4.5
+      }
+    ]
+  },
+  {
+    "name": "Gordon Ramsay",
+    "country": "USA",
+    "experience": 18,
+    "total_recipes": 45,
+    "likes": 350,
+    "image": "https://i.ibb.co/2dvxzyJ/Gordon-Ramsay.png",
+    "bio": "Gordon Ramsay is a renowned American chef known for his passion for American comfort food. With over 18 years of experience, he specializes in creating classic dishes with a modern twist.",
+    "recipes": [
+      {
+        "_id": 987654,
+        "recipe_name": "Classic Cheeseburger",
+        "image": "https://i.ibb.co/RQ0p7CX/pexels-tim-douglas-6210959.jpg",
+        "ingredients": [
+          "Ground beef",
+          "American cheese",
+          "Burger buns",
+          "Lettuce",
+          "Tomato"
+        ],
+        "cooking_method": "1. Form beef into patties and grill. \n2. Add cheese and melt. \n3. Assemble in buns with lettuce and tomato. \n4. Serve hot with fries.",
+        "rating": 4.9
+      },
+      {
+        "_id": 876543,
+        "recipe_name": "Fried Chicken",
+        "image": "https://i.ibb.co/vm22vW3/pexels-ruslan-khmelevsky-7655118.jpg",
+        "ingredients": [
+          "Chicken pieces",
+          "Buttermilk",
+          "Flour",
+          "Spices",
+          "Vegetable oil"
+        ],
+        "cooking_method": "1. Soak chicken in buttermilk. \n2. Coat with seasoned flour. \n3. Deep fry until golden. \n4. Serve with coleslaw and biscuits.",
+        "rating": 4.8
+      },
+      {
+        "_id": 765432,
+        "recipe_name": "Macaroni and Cheese",
+        "image": "https://i.ibb.co/VJKjYSn/pexels-geraud-pfeiffer-6542794.jpg",
+        "ingredients": [
+          "Macaroni",
+          "Cheddar cheese",
+          "Milk",
+          "Butter",
+          "Breadcrumbs"
+        ],
+        "cooking_method": "1. Cook macaroni and make cheese sauce. \n2. Mix and top with breadcrumbs. \n3. Bake until bubbly. \n4. Enjoy the creamy goodness.",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "name": "Emily Davis",
+    "country": "USA",
+    "experience": 15,
+    "total_recipes": 40,
+    "likes": 300,
+    "image": "https://i.ibb.co/Hqmx5mh/pexels-polina-tankilevitch-4518843.jpg",
+    "bio": "Emily Davis is an American chef known for her expertise in Southern cuisine. She is passionate about creating soulful dishes that remind people of home-cooked meals from the South.",
+    "recipes": [
+      {
+        "_id": 654321,
+        "recipe_name": "Shrimp and Grits",
+        "image": "https://i.ibb.co/Hqmx5mh/pexels-polina-tankilevitch-4518843.jpg",
+        "ingredients": ["Shrimp", "Grits", "Bacon", "Cheese", "Green onions"],
+        "cooking_method": "1. Cook grits and top with cheese. \n2. Sauté shrimp and bacon. \n3. Serve over grits. \n4. Garnish with green onions.",
+        "rating": 4.9
+      },
+      {
+        "_id": 543210,
+        "recipe_name": "BBQ Ribs",
+        "image": "https://i.ibb.co/h8HK88j/pexels-nadin-sh-14846852.jpg",
+        "ingredients": [
+          "Pork ribs",
+          "BBQ sauce",
+          "Dry rub",
+          "Wood chips",
+          "Cornbread"
+        ],
+        "cooking_method": "1. Season ribs with dry rub. \n2. Smoke with wood chips. \n3. Grill and baste with BBQ sauce. \n4. Serve with cornbread.",
+        "rating": 4.8
+      },
+      {
+        "_id": 432109,
+        "recipe_name": "Pecan Pie",
+        "image": "https://i.ibb.co/DK5wDL5/pexels-nadin-sh-14822890.jpg",
+        "ingredients": ["Pie crust", "Pecans", "Eggs", "Sugar", "Corn syrup"],
+        "cooking_method": "1. Prepare pie crust. \n2. Mix pecans, eggs, sugar, and corn syrup. \n3. Bake until set. \n4. Enjoy the Southern classic.",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "name": "Michael Johnson",
+    "country": "USA",
+    "experience": 20,
+    "total_recipes": 50,
+    "likes": 400,
+    "image": "https://i.ibb.co/Fxj0qg5/Michael-Johnson.png",
+    "bio": "Michael Johnson is a celebrated American chef with a rich culinary background. He excels in creating gourmet dishes inspired by regional American flavors.",
+    "recipes": [
+      {
+        "_id": 321098,
+        "recipe_name": "Lobster Bisque",
+        "image": "https://i.ibb.co/WzFB6Bg/pexels-kampus-production-6605214.jpg",
+        "ingredients": ["Lobster meat", "Cream", "Butter", "Sherry", "Chives"],
+        "cooking_method": "1. Sauté lobster meat in butter. \n2. Add cream and sherry. \n3. Simmer until rich and creamy. \n4. Garnish with chives.",
+        "rating": 4.9
+      },
+      {
+        "_id": 210987,
+        "recipe_name": "Filet Mignon",
+        "image": "https://i.ibb.co/Rp41B4p/pexels-marilena-baltzaki-15082407.jpg",
+        "ingredients": [
+          "Filet mignon steaks",
+          "Red wine reduction",
+          "Mashed potatoes",
+          "Asparagus",
+          "Thyme"
+        ],
+        "cooking_method": "1. Sear filet mignon steaks. \n2. Serve with red wine reduction. \n3. Accompany with mashed potatoes and asparagus. \n4. Sprinkle with thyme.",
+        "rating": 4.8
+      },
+      {
+        "_id": 109876,
+        "recipe_name": "Chocolate Fondue",
+        "image": "https://i.ibb.co/VJQSSZ2/pexels-malidate-van-769289.jpg",
+        "ingredients": [
+          "Chocolate",
+          "Heavy cream",
+          "Assorted fruits",
+          "Marshmallows",
+          "Pretzels"
+        ],
+        "cooking_method": "1. Melt chocolate and cream. \n2. Serve with fruits, marshmallows, and pretzels for dipping. \n3. Enjoy the sweet indulgence.",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "name": "Sarah Williams",
+    "country": "USA",
+    "experience": 12,
+    "total_recipes": 35,
+    "likes": 280,
+    "image": "https://i.ibb.co/S5PdHJH/Sarah-Williams.png",
+    "bio": "Sarah Williams is a talented American chef known for her creativity in fusion cuisine. She combines flavors from around the world to create unique and exciting dishes.",
+    "recipes": [
+      {
+        "_id": 876543,
+        "recipe_name": "Sushi Burrito",
+        "image": "https://i.ibb.co/9gTW7sr/pexels-sam-lion-5710178.jpg",
+        "ingredients": [
+          "Sushi rice",
+          "Nori seaweed",
+          "Assorted sashimi",
+          "Avocado",
+          "Soy sauce"
+        ],
+        "cooking_method": "1. Spread sushi rice on nori. \n2. Add sashimi, avocado, and soy sauce. \n3. Roll into a burrito. \n4. Slice and serve.",
+        "rating": 4.9
+      },
+      {
+        "_id": 765432,
+        "recipe_name": "Taco Pizza",
+        "image": "https://i.ibb.co/vm22vW3/pexels-ruslan-khmelevsky-7655118.jpg",
+        "ingredients": [
+          "Pizza dough",
+          "Ground beef",
+          "Taco seasoning",
+          "Cheddar cheese",
+          "Lettuce"
+        ],
+        "cooking_method": "1. Roll out pizza dough. \n2. Top with seasoned beef and cheese. \n3. Bake until golden. \n4. Garnish with lettuce.",
+        "rating": 4.8
+      },
+      {
+        "_id": 654321,
+        "recipe_name": "Thai Spaghetti",
+        "image": "https://i.ibb.co/Rp41B4p/pexels-marilena-baltzaki-15082407.jpg",
+        "ingredients": [
+          "Spaghetti",
+          "Thai basil",
+          "Ground pork",
+          "Chilies",
+          "Fish sauce"
+        ],
+        "cooking_method": "1. Cook spaghetti. \n2. Sauté ground pork with chilies and fish sauce. \n3. Toss with Thai basil. \n4. Serve with a Thai twist.",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "name": "Daniel Brown",
+    "country": "USA",
+    "experience": 16,
+    "total_recipes": 42,
+    "likes": 320,
+    "image": "https://i.ibb.co/3dZctpq/Daniel-Brown.png",
+    "bio": "Daniel Brown is a passionate American chef who loves experimenting with flavors and textures. His innovative dishes always leave diners wanting more.",
+    "recipes": [
+      {
+        "_id": 234567,
+        "recipe_name": "Truffle Risotto",
+        "image": "https://i.ibb.co/WzFB6Bg/pexels-kampus-production-6605214.jpg",
+        "ingredients": [
+          "Arborio rice",
+          "Truffle oil",
+          "Parmesan cheese",
+          "Chicken broth",
+          "Chives"
+        ],
+        "cooking_method": "1. Sauté rice, add broth and truffle oil. \n2. Stir in cheese. \n3. Garnish with chives. \n4. Enjoy the luxurious flavors.",
+        "rating": 4.9
+      },
+      {
+        "_id": 345678,
+        "recipe_name": "Cajun Shrimp Pasta",
+        "image": "https://i.ibb.co/VJQSSZ2/pexels-malidate-van-769289.jpg",
+        "ingredients": [
+          "Shrimp",
+          "Pasta",
+          "Cajun seasoning",
+          "Cream sauce",
+          "Bell peppers"
+        ],
+        "cooking_method": "1. Sauté shrimp with Cajun seasoning. \n2. Toss with pasta and cream sauce. \n3. Add bell peppers. \n4. Spice up your meal!",
+        "rating": 4.8
+      },
+      {
+        "_id": 456789,
+        "recipe_name": "Mango Sorbet",
+        "image": "https://i.ibb.co/VJKjYSn/pexels-geraud-pfeiffer-6542794.jpg",
+        "ingredients": ["Mangoes", "Sugar", "Lime juice", "Mint leaves", "Ice"],
+        "cooking_method": "1. Blend mangoes, sugar, lime juice, and ice. \n2. Freeze until firm. \n3. Garnish with mint leaves. \n4. Savor the tropical delight.",
+        "rating": 4.7
+      }
+    ]
+  }
+]

@@ -7,6 +7,7 @@ import Recipes from "../Pages/Recipes/Recipes";
 import Blogs from "../Pages/Blogs/Blogs";
 import Contact from "../Pages/Contact/Contact";
 import AboutUs from "../Pages/AboutUs/AboutUs";
+import ChefDetails from "../Pages/ChefsDetailsPage/ChefDetails";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "chef/:id/recipes",
         element: <ChefsDetailsPage />,
+      },
+      {
+        path: "chef/:id/recipes",
+        element: <ChefDetails />,
       },
       {
         path: "/all-chefs",
