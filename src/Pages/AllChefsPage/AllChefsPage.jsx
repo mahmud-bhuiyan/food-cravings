@@ -63,7 +63,7 @@ const AllChefsPage = () => {
 
               <div className="card-actions justify-end">
                 <Link
-                  to={`/${chef.name.replace(/\s+/g, "-")}/recipes`}
+                  to={`/chef/${chef.name.replace(/\s+/g, "-")}/recipes`}
                   className="btn btn-sm btn-primary"
                 >
                   See all recipes
