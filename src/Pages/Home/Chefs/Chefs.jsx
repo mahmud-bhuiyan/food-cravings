@@ -6,7 +6,7 @@ const Chefs = () => {
   const [chefsData, setChefsData] = useState([]);
 
   useEffect(() => {
-    fetch("chefs.json")
+    fetch("http://localhost:5000/chefs")
       .then((res) => res.json())
       .then((data) => {
         const randomChefs = getRandomChefs(data, 10);
@@ -51,9 +51,13 @@ const Chefs = () => {
                 <p>Recipes: {chef.total_recipes}</p>
                 <p>&#10084;&#65039;: {chef.likes}</p>
               </div>
-              <button className="w-[90%] btn btn-sm bg-purple-500 text-white hover:bg-purple-800">
+              <Link
+                className="w-[90%] btn btn-sm bg-purple-500 text-white hover:bg-purple-800"
+                to={`/chef/${chef._id}/recipes`}
+                // to={`/${chef.name.replace(/\s+/g, "-")}/recipes`}
+              >
                 {chef.name.split(" ")[0]}&lsquo;s Recipes
-              </button>
+              </Link>
             </div>
           </div>
         ))}

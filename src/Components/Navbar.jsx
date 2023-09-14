@@ -2,12 +2,11 @@ import { useState } from "react";
 import { CrossIcon, Hamburger } from "../assets/icons";
 import headerLogo from "../assets/food-cravings.png";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa6";
-import { Link, useLocation } from "react-router-dom"; // Import Link and useLocation from react-router-dom
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const location = useLocation(); // Get the current location from react-router-dom
-
+  const location = useLocation();
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
@@ -30,18 +29,18 @@ const Navbar = () => {
     <header className="padding-x w-full pt-5 pb-4 fixed z-10 bg-white">
       <nav className="flex justify-between items-center max-container">
         <Link to="/">
-          {" "}
-          {/* Use Link component instead of <a> */}
           <img src={headerLogo} alt="headerLogo" width={120} height={30} />
         </Link>
 
         <ul className="flex flex-1 justify-center items-center max-lg:hidden gap-4">
           {navLinks?.map((link, index) => (
             <li key={index}>
-              <Link // Use Link component instead of <a>
+              <Link
                 to={link.href}
                 className={`text-lg text-slate-gray font-montserrat leading-normal mr-4 ${
-                  location.pathname === link.href ? "underline" : ""
+                  location.pathname === link.href
+                    ? "text-purple-600 font-semibold"
+                    : ""
                 }`}
                 onClick={closeMenu}
               >
@@ -105,7 +104,11 @@ const Navbar = () => {
                 <li key={index}>
                   <Link
                     to={link.href}
-                    className="block px-4 py-2 hover:bg-gray-200 text-slate-gray font-montserrat border-b-2"
+                    className={`block px-4 py-2 hover:bg-gray-200 text-slate-gray font-montserrat border-b-2 text-lg  leading-normal ${
+                      location.pathname === link.href
+                        ? "text-purple-600 font-semibold"
+                        : ""
+                    }`}
                     onClick={closeMenu}
                   >
                     {link.label}

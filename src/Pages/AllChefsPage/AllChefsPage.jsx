@@ -7,7 +7,7 @@ const AllChefsPage = () => {
   const [chefsData, setChefsData] = useState([]);
 
   useEffect(() => {
-    fetch("chefs.json")
+    fetch("http://localhost:5000/chefs")
       .then((res) => res.json())
       .then((data) => {
         setChefsData(data);
