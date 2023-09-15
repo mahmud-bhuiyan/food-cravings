@@ -3,11 +3,14 @@ import SectionHeader from "../../Components/SectionHeader";
 import poster from "../../assets/poster.png";
 import Newsletter from "../../Components/Newsletter";
 import { Helmet } from "react-helmet-async";
+import { Rating } from "@smastrom/react-rating";
+import "@smastrom/react-rating/style.css";
+import { Link } from "react-router-dom";
 
 const Recipes = () => {
   const [recipes, setRecipes] = useState([]);
   const [page, setPage] = useState(1);
-  const [searchQuery, setSearchQuery] = useState(""); // Step 1: State for search query
+  const [searchQuery, setSearchQuery] = useState("");
   const recipesPerPage = 10;
 
   useEffect(() => {
@@ -26,21 +29,18 @@ const Recipes = () => {
 
   const filteredRecipes = recipes.filter((recipe) =>
     recipe.recipe_name.toLowerCase().includes(searchQuery.toLowerCase())
-  ); // Step 2: Filter recipes based on the search query
+  );
 
-  // Function to get the recipes for the current page
   const getCurrentPageRecipes = () => {
     const startIndex = (page - 1) * recipesPerPage;
     const endIndex = startIndex + recipesPerPage;
     return filteredRecipes.slice(startIndex, endIndex);
   };
 
-  // Function to handle page navigation
   const handlePageChange = (newPage) => {
     setPage(newPage);
   };
 
-  // Step 2: Handle search input change
   const handleSearchInputChange = (event) => {
     setSearchQuery(event.target.value);
   };
@@ -58,7 +58,7 @@ const Recipes = () => {
         divStyle="text-center mb-10"
       />
       {/*search bar */}
-      <div className="search-bar flex justify-center">
+      <div className="search-bar flex justify-center mb-6">
         <input
           type="text"
           placeholder="Search recipes..."
@@ -70,28 +70,38 @@ const Recipes = () => {
       <div className="lg:grid grid-cols-3 px-2 gap-8">
         <div className="col-span-2">
           {getCurrentPageRecipes().map((recipe, index) => (
-            <div key={index} className="grid lg:flex gap-4 mb-10">
-              <div>
+            <div key={index} className="grid lg:flex gap-4 mb-20">
+              <div className="flex justify-center">
                 <figure className="lg:w-[250px] lg:border">
                   <img src={recipe.image} alt={recipe.recipe_name} />
                 </figure>
               </div>
-              <div className="">
-                <h2 className="text-lg md:text-xl lg:text-2xl font-semibold font-montserrat">
-                  {recipe.recipe_name}
-                </h2>
-                <div className="flex gap-4 font-palanquin">
-                  <p>
-                    <span className="font-semibold">Time:</span> {recipe.time}{" "}
-                    minutes
-                  </p>
-                  <p>
-                    <span className="font-semibold">Type:</span> {recipe.type}
-                  </p>
-                  <p>
-                    <span className="font-semibold">Rating:</span>{" "}
-                    {recipe.rating}
-                  </p>
+              <div>
+                <div className="grid justify-center">
+                  {/* recipe_name */}
+                  <h2 className="text-lg md:text-xl lg:text-2xl font-semibold font-montserrat">
+                    {recipe.recipe_name}
+                  </h2>
+                  <div className="flex gap-4 font-palanquin">
+                    <p>
+                      <span className="font-semibold">Time:</span> {recipe.time}{" "}
+                      minutes
+                    </p>
+                    <p>
+                      <span className="font-semibold">Type:</span> {recipe.type}
+                    </p>
+                  </div>
+                  {/* Rating */}
+                  <div className="flex flex-wrap">
+                    <Rating
+                      style={{ maxWidth: 150 }}
+                      value={recipe.rating}
+                      readOnly
+                    />
+                    <p className="flex items-end pl-1 text-xs font-montserrat font-semibold">
+                      ({recipe.rating})
+                    </p>
+                  </div>
                 </div>
                 <h3 className="font-palanquin">
                   <span className="font-semibold">Ingredients:</span>{" "}
@@ -102,9 +112,13 @@ const Recipes = () => {
                   {recipe.cooking_method.length > 160 ? (
                     <>
                       {recipe.cooking_method.substring(0, 160)}...
-                      <a href="#" className="text-blue-600 font-semibold">
+                      <Link
+                        to={`/recipe/${recipe._id}`}
+                        className="text-blue-600 font-semibold"
+                      >
                         See Details
-                      </a>
+                      </Link>
+                      <a href="#"></a>
                     </>
                   ) : (
                     recipe.cooking_method
@@ -113,6 +127,7 @@ const Recipes = () => {
               </div>
             </div>
           ))}
+
           {/* Pagination Buttons */}
           <div className="join flex justify-center mb-10">
             {Array.from(
@@ -131,6 +146,8 @@ const Recipes = () => {
             )}
           </div>
         </div>
+
+        {/* right side */}
         <div className="col-span-1 px-2">
           <h2 className="font-montserrat font font-semibold text-xl">
             Tasty Recipes
@@ -149,7 +166,9 @@ const Recipes = () => {
                       className="border"
                     />
                   </figure>
-                  <h2 className="text-sm">{recipe.recipe_name}</h2>
+                  <h2 className="text-sm font-montserrat font-semibold">
+                    {recipe.recipe_name}
+                  </h2>
                 </div>
               ))}
             </div>

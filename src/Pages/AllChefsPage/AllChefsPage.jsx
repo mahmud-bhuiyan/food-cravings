@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import SectionHeader from "../../Components/SectionHeader";
 import { Helmet } from "react-helmet-async";
+import { Rating } from "@smastrom/react-rating";
+import "@smastrom/react-rating/style.css";
 
 const AllChefsPage = () => {
   const [chefsData, setChefsData] = useState([]);
@@ -18,7 +20,7 @@ const AllChefsPage = () => {
   return (
     <section className="max-container">
       <Helmet>
-        <title>All Chefs | Food Cravings</title>
+        <title>Chefs | Food Cravings</title>
       </Helmet>
 
       <SectionHeader
@@ -45,7 +47,7 @@ const AllChefsPage = () => {
                 <p>&#10084;&#65039;: {chef.likes}</p>
               </div>
             </div>
-            <div className="card-body">
+            <div className="card-body font-palanquin">
               {chef.recipes.map((recipe, index) => (
                 <div key={index} className="flex space-x-2">
                   <img
@@ -55,15 +57,29 @@ const AllChefsPage = () => {
                     alt={recipe.recipe_name}
                   />
                   <div>
-                    <h3 className="uppercase">{recipe.recipe_name} --------</h3>
-                    <p>Rating: {recipe.rating}</p>
+                    <h3 className="uppercase">{recipe.recipe_name}</h3>
+                    <h3 className="">
+                      <span className="">Ingredients : </span>
+                      {recipe.ingredients}
+                    </h3>
+                    <div className="flex flex-wrap">
+                      <Rating
+                        style={{ maxWidth: 150 }}
+                        value={recipe.rating}
+                        readOnly
+                      />
+                      <p className="flex items-end pl-1 text-xs font-montserrat font-semibold">
+                        ({recipe.rating})
+                      </p>
+                    </div>
                   </div>
                 </div>
               ))}
 
               <div className="card-actions justify-end">
                 <Link
-                  to={`/chef/${chef.name.replace(/\s+/g, "-")}/recipes`}
+                  to={`/chef/${chef._id}/recipes`}
+                  // to={`/chef/${chef.name.replace(/\s+/g, "-")}/recipes`}
                   className="btn btn-sm btn-primary"
                 >
                   See all recipes

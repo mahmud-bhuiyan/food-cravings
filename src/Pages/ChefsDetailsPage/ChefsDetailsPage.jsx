@@ -66,7 +66,9 @@ const ChefsDetailsPage = () => {
                 className="mb-4 rounded"
               />
             </div>
-            <h1 className="font-montserrat font-bold">Chef {chefData.name}</h1>
+            <h1 className="font-montserrat font-bold text-xl">
+              Chef {chefData.name}
+            </h1>
             <div className="flex flex-wrap justify-center gap-2 font-palanquin m-2">
               <p>
                 <span className="font-semibold">Country : </span>
@@ -87,7 +89,7 @@ const ChefsDetailsPage = () => {
             </p>
           </div>
 
-          <h2 className="font-montserrat font-semibold underline mb-8">
+          <h2 className="font-montserrat font-semibold underline text-3xl mb-8">
             Some Signature Recipes
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
@@ -97,7 +99,9 @@ const ChefsDetailsPage = () => {
           </div>
         </div>
       ) : (
-        <p>Loading chef data...</p>
+        <div className="min-h-screen flex justify-center items-center">
+          <p>Loading chef data...</p>
+        </div>
       )}
     </div>
   );

@@ -7,7 +7,7 @@ import Recipes from "../Pages/Recipes/Recipes";
 import Blogs from "../Pages/Blogs/Blogs";
 import Contact from "../Pages/Contact/Contact";
 import AboutUs from "../Pages/AboutUs/AboutUs";
-import ChefDetails from "../Pages/ChefsDetailsPage/ChefDetails";
+import RecipeDetails from "../Pages/RecipeDetails/RecipeDetails";
 
 const router = createBrowserRouter([
   {
@@ -23,16 +23,16 @@ const router = createBrowserRouter([
         element: <ChefsDetailsPage />,
       },
       {
-        path: "chef/:id/recipes",
-        element: <ChefDetails />,
-      },
-      {
-        path: "/all-chefs",
+        path: "/chefs",
         element: <AllChefsPage />,
       },
       {
         path: "/recipes",
         element: <Recipes />,
+      },
+      {
+        path: "recipe/:id",
+        element: <RecipeDetails />,
       },
       {
         path: "/blogs",

@@ -63,7 +63,7 @@ const Chefs = () => {
         ))}
       </div>
 
-      <Link to="/all-chefs" className="flex justify-center">
+      <Link to="/chefs" className="flex justify-center">
         <button className="bg-purple-500 text-white hover:bg-purple-800 w-[40%] sm:w-[30%] md:w-[20%] py-2 rounded-lg">
           See All Chef&lsquo;s
         </button>

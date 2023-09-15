@@ -6,7 +6,9 @@ const SectionHeader = ({ divStyle, subStyle, textStyle, text, subText }) => {
       >
         {text}
       </h2>
-      <h3 className={`md:text-lg font-semibold mb-6 capitalize ${subStyle}`}>
+      <h3
+        className={`sm:text-lg md:text-xl font-semibold mb-6 capitalize ${subStyle}`}
+      >
         {subText}
       </h3>
     </div>
