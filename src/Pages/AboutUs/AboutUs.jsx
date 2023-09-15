@@ -8,14 +8,14 @@ const AboutUs = () => {
       <Helmet>
         <title>About Us | Food Cravings</title>
       </Helmet>
-      
+
       <SectionHeader
         text={"About Us"}
         textStyle={"mt-10"}
         divStyle={"text-center mb-10"}
       />
 
-      <div className="text-center font-montserrat">
+      <div className="text-center font-montserrat mx-20">
         <p className="text-lg leading-7">
           Welcome to Food Cravings, your ultimate destination for culinary
           inspiration! We&lsquo;re passionate about sharing delicious recipes

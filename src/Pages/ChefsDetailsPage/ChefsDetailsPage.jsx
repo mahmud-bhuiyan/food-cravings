@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import axios from "axios";
 import SectionHeader from "../../Components/SectionHeader";
 import { Rating } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
+import { Helmet } from "react-helmet-async";
+import Newsletter from "../../Components/Newsletter";
 
 const ChefsDetailsPage = () => {
   const [chefData, setChefData] = useState(null);
@@ -79,52 +81,69 @@ const ChefsDetailsPage = () => {
   return (
     <div className="max-container">
       {chefData ? (
-        <div className="px-2 m-2 sm:m-4 md:m-10 text-center">
-          <SectionHeader
-            text={`${chefData.name}'s Recipes`}
-            textStyle={"!mt-14 font-montserrat"}
-          />
-          <div className="mb-10">
-            <div className="flex justify-center items-center align-middle">
-              <img
-                src={chefData.image}
-                alt={chefData.name}
-                width={200}
-                className="mb-4 rounded"
-              />
-            </div>
-            <h1 className="font-montserrat font-bold text-xl">
-              Chef {chefData.name}
-            </h1>
-            <div className="flex flex-wrap justify-center gap-2 font-palanquin m-2">
-              <p>
-                <span className="font-bold">Country : </span>
-                {chefData.country},
+        <>
+          <Helmet>
+            <title>
+              {chefData?.name.split(" ").slice(0, 2).join(" ")} | Food Cravings
+            </title>
+          </Helmet>
+          <div className="px-2 m-2 sm:m-4 md:m-10 text-center">
+            <SectionHeader
+              text={`${chefData.name}'s Recipes`}
+              textStyle={"!mt-14 font-montserrat"}
+            />
+            <div className="mb-10">
+              <div className="flex justify-center items-center align-middle">
+                <img
+                  src={chefData.image}
+                  alt={chefData.name}
+                  width={200}
+                  className="mb-4 rounded"
+                />
+              </div>
+              <h1 className="font-montserrat font-bold text-xl">
+                Chef {chefData.name}
+              </h1>
+              <div className="flex flex-wrap justify-center gap-2 font-palanquin m-2">
+                <p>
+                  <span className="font-bold">Country : </span>
+                  {chefData.country},
+                </p>
+                <p>
+                  <span className="font-bold">Total &#10084;&#65039; : </span>
+                  {chefData.likes}
+                </p>
+              </div>
+              <p className="mb-2">
+                <span className="font-bold">Experience : </span>
+                {chefData.experience} years
               </p>
-              <p>
-                <span className="font-bold">Total &#10084;&#65039; : </span>
-                {chefData.likes}
+              <p className="mx-2 sm:mx-10 md:mx-20 lg:mx-40 font-palanquin">
+                <span className="font-bold">Bio: </span>
+                {chefData.bio}
               </p>
             </div>
-            <p className="mb-2">
-              <span className="font-bold">Experience : </span>
-              {chefData.experience} years
-            </p>
-            <p className="mx-2 sm:mx-10 md:mx-20 lg:mx-40 font-palanquin">
-              <span className="font-bold">Bio: </span>
-              {chefData.bio}
-            </p>
-          </div>
 
-          <h2 className="font-montserrat font-bold underline text-3xl mb-8">
-            Some Signature Recipes
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
-            {chefData.recipes?.map((recipe) => (
-              <RecipeCard key={recipe._id} recipe={recipe} />
-            ))}
+            <h2 className="font-montserrat font-bold underline text-3xl mb-8">
+              Some Signature Recipes
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
+              {chefData.recipes?.map((recipe) => (
+                <RecipeCard key={recipe._id} recipe={recipe} />
+              ))}
+            </div>
+            <div className="card-actions justify-center mt-6 sm:mt-10 md:mt-14">
+              <Link
+                to="/chefs"
+                className="bg-purple-500 text-white hover:bg-purple-800 px-4 sm:px-10 py-2 rounded-lg flex flex-wrap"
+              >
+                See All Chefs
+              </Link>
+            </div>
+            {/* Newsletter section  */}
+            <Newsletter />
           </div>
-        </div>
+        </>
       ) : (
         <div className="min-h-screen flex justify-center items-center">
           <p>Loading chef data...</p>

@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import Newsletter from "../../../Components/Newsletter";
 import Banner from "../Banner/Banner";
 import Categories from "../Categories/Categories";
@@ -9,6 +10,9 @@ import TastyRecipes from "../TastyRecipes/TastyRecipes";
 const Home = () => {
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Food Cravings</title>
+      </Helmet>
       <section className="max-container mt-1">
         <Banner />
       </section>

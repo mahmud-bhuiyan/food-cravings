@@ -38,7 +38,7 @@ const RecipeDetails = () => {
           <SectionHeader
             text={`${recipeData[0].recipe_name}`}
             textStyle="font-montserrat !mt-10 mb-4"
-            subText="Learn more about the recipe"
+            subText="Learn more about this recipe"
             divStyle="text-center mb-10"
           />
           <div className="my-8">
