@@ -64,7 +64,7 @@ const Recipes = () => {
           placeholder="Search recipes..."
           onChange={handleSearchInputChange}
           value={searchQuery}
-          className="w-[40%] border rounded py-1 px-2 mb-10"
+          className="w-[40%] border rounded p-2 mb-10"
         />
       </div>
       <div className="lg:grid grid-cols-3 px-4 gap-8">
@@ -72,7 +72,7 @@ const Recipes = () => {
           {getCurrentPageRecipes().map((recipe, index) => (
             <div key={index} className="grid lg:flex gap-4 mb-20">
               <div className="flex justify-center">
-                <figure className="lg:w-[250px] lg:border">
+                <figure className="lg:w-[250px] lg:h-[144px] lg:border">
                   <img src={recipe.image} alt={recipe.recipe_name} />
                 </figure>
               </div>
