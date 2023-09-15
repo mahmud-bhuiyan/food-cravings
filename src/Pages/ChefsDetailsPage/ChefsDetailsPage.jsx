@@ -31,8 +31,12 @@ const ChefsDetailsPage = () => {
         </figure>
         <div className="card-body items-center">
           <h2 className="card-title ">{recipe.recipe_name}</h2>
-          <Rating style={{ maxWidth: 150 }} value={recipe.rating} readOnly />
-
+          <div className="flex flex-wrap">
+            <Rating style={{ maxWidth: 150 }} value={recipe.rating} readOnly />
+            <p className="flex items-end pl-1 text-xs font-montserrat font-semibold">
+              ({recipe.rating})
+            </p>
+          </div>
           <p>
             <span className="font-semibold">Ingredients : </span>
             {recipe.ingredients.join(", ")}
