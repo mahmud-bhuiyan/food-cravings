@@ -67,7 +67,7 @@ const Recipes = () => {
           className="w-[40%] border rounded py-1 px-2 mb-10"
         />
       </div>
-      <div className="lg:grid grid-cols-3 px-2 gap-8">
+      <div className="lg:grid grid-cols-3 px-4 gap-8">
         <div className="col-span-2">
           {getCurrentPageRecipes().map((recipe, index) => (
             <div key={index} className="grid lg:flex gap-4 mb-20">
@@ -77,12 +77,12 @@ const Recipes = () => {
                 </figure>
               </div>
               <div>
-                <div className="grid justify-center">
+                <div className="text-center lg:text-start">
                   {/* recipe_name */}
-                  <h2 className="text-lg md:text-xl lg:text-2xl font-semibold font-montserrat">
+                  <h2 className="my-2 lg:my-0 font-montserrat text-lg sm:text-xl md:text-2xl font-bold">
                     {recipe.recipe_name}
                   </h2>
-                  <div className="flex gap-4 font-palanquin">
+                  <div className="flex flex-wrap justify-center lg:justify-start gap-4 font-palanquin my-2">
                     <p>
                       <span className="font-semibold">Time:</span> {recipe.time}{" "}
                       minutes
@@ -92,7 +92,7 @@ const Recipes = () => {
                     </p>
                   </div>
                   {/* Rating */}
-                  <div className="flex flex-wrap">
+                  <div className="flex flex-wrap  justify-center lg:justify-start my-2">
                     <Rating
                       style={{ maxWidth: 150 }}
                       value={recipe.rating}
@@ -103,27 +103,30 @@ const Recipes = () => {
                     </p>
                   </div>
                 </div>
-                <h3 className="font-palanquin">
-                  <span className="font-semibold">Ingredients:</span>{" "}
-                  {recipe.ingredients.join(", ")}
-                </h3>
-                <h3 className="font-palanquin">
-                  <span className="font-semibold">Cooking Method:</span>{" "}
-                  {recipe.cooking_method.length > 160 ? (
-                    <>
-                      {recipe.cooking_method.substring(0, 160)}...
-                      <Link
-                        to={`/recipe/${recipe._id}`}
-                        className="text-blue-600 font-semibold"
-                      >
-                        See Details
-                      </Link>
-                      <a href="#"></a>
-                    </>
-                  ) : (
-                    recipe.cooking_method
-                  )}
-                </h3>
+                <div className="px-2 sm:mx-10 lg:mx-0">
+                  {/* Ingredients */}
+                  <h3 className="font-palanquin">
+                    <span className="font-bold text-lg">Ingredients:</span>{" "}
+                    {recipe.ingredients.join(", ")}
+                  </h3>
+                  {/* Cooking Method */}
+                  <h3 className="font-palanquin mt-2">
+                    <span className="font-bold text-lg">Cooking Method:</span>{" "}
+                    {recipe.cooking_method.length > 160 ? (
+                      <>
+                        {recipe.cooking_method.substring(0, 160)}...
+                        <Link
+                          to={`/recipe/${recipe._id}`}
+                          className="text-blue-600 font-semibold"
+                        >
+                          See Details
+                        </Link>
+                      </>
+                    ) : (
+                      recipe.cooking_method
+                    )}
+                  </h3>
+                </div>
               </div>
             </div>
           ))}

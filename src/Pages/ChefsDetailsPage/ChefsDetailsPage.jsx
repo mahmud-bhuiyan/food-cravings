@@ -25,26 +25,53 @@ const ChefsDetailsPage = () => {
 
   const RecipeCard = ({ recipe }) => {
     return (
-      <div className="card card-compact bg-base-100 shadow pt-4 flex items-center">
-        <figure className="w-[250px] h-[150px] border rounded">
-          <img src={recipe.image} alt={recipe.recipe_name} />
-        </figure>
-        <div className="card-body items-center">
-          <h2 className="card-title ">{recipe.recipe_name}</h2>
-          <div className="flex flex-wrap">
-            <Rating style={{ maxWidth: 150 }} value={recipe.rating} readOnly />
-            <p className="flex items-end pl-1 text-xs font-montserrat font-semibold">
-              ({recipe.rating})
-            </p>
+      <div className="card card-compact bg-base-100 shadow pt-4 py-4">
+        <div className="flex justify-center">
+          <figure className="w-[350px] h-[180px] border rounded-md">
+            <img src={recipe.image} alt={recipe.recipe_name} />
+          </figure>
+        </div>
+
+        <div className="card-body">
+          <div className="grid justify-center">
+            <h2 className="my-2 lg:my-0 font-montserrat text-lg sm:text-xl md:text-2xl font-bold">
+              {recipe.recipe_name}
+            </h2>
+            <div className="flex flex-wrap my-2">
+              <Rating
+                style={{ maxWidth: 150 }}
+                value={recipe.rating}
+                readOnly
+              />
+              <p className="flex items-end pl-1 text-xs font-montserrat font-bold">
+                ({recipe.rating})
+              </p>
+            </div>
           </div>
-          <p>
-            <span className="font-semibold">Ingredients : </span>
-            {recipe.ingredients.join(", ")}
-          </p>
-          <p>
-            <span className="font-semibold">Cooking Method : </span>{" "}
-            {recipe.cooking_method}
-          </p>
+
+          {/* Ingredients */}
+          <div className="text-start px-4">
+            <p className="font-palanquin font-bold text-purple-600 underline text-lg mb-2">
+              Ingredients
+            </p>
+            <ul>
+              {recipe.ingredients.map((ingredient, index) => (
+                <li key={index}>{`${index + 1}. ${ingredient}`}</li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Cooking Method */}
+          <div className="text-start px-4 mt-2">
+            <p className="font-palanquin font-bold text-purple-600 underline text-lg mb-2">
+              Cooking Method
+            </p>
+            <ul>
+              {recipe.cooking_method.split("\n").map((step, index) => (
+                <li key={index}>{`${step}`}</li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     );
@@ -71,28 +98,28 @@ const ChefsDetailsPage = () => {
             </h1>
             <div className="flex flex-wrap justify-center gap-2 font-palanquin m-2">
               <p>
-                <span className="font-semibold">Country : </span>
+                <span className="font-bold">Country : </span>
                 {chefData.country},
               </p>
               <p>
-                <span className="font-semibold">Experience : </span>
-                {chefData.experience} years,
-              </p>
-              <p>
-                <span className="font-semibold">Total &#10084;&#65039; : </span>
+                <span className="font-bold">Total &#10084;&#65039; : </span>
                 {chefData.likes}
               </p>
             </div>
+            <p className="mb-2">
+              <span className="font-bold">Experience : </span>
+              {chefData.experience} years
+            </p>
             <p className="mx-2 sm:mx-10 md:mx-20 lg:mx-40 font-palanquin">
-              <span className="font-semibold">Bio: </span>
+              <span className="font-bold">Bio: </span>
               {chefData.bio}
             </p>
           </div>
 
-          <h2 className="font-montserrat font-semibold underline text-3xl mb-8">
+          <h2 className="font-montserrat font-bold underline text-3xl mb-8">
             Some Signature Recipes
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
             {chefData.recipes?.map((recipe) => (
               <RecipeCard key={recipe._id} recipe={recipe} />
             ))}
