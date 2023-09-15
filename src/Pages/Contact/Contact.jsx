@@ -119,7 +119,7 @@ const Contact = () => {
 
             <div className="form-control mt-3">
               <input
-                className="btn text-white hover:bg-purple-500 hover:text-dark bg-purple-300 transition duration-3000 border-0"
+                className="btn text-white hover:bg-purple-800 hover:text-dark bg-purple-500 transition duration-3000 border-0"
                 type="submit"
                 value="Send Message"
               />
