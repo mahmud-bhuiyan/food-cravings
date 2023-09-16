@@ -21,9 +21,9 @@ const Navbar = () => {
     { href: "/chefs", label: "Chefs" },
     { href: "/blogs", label: "Blogs" },
     { href: "/contact", label: "Contact" },
-    { href: "/about-us", label: "About us" },
+    { href: "/about", label: "About us" },
     // { href: "/sign-up", label: "Sign Up" },
-    // { href: "/login", label: "Login" },
+    { href: "/login", label: "Login" },
   ];
 
   return (
@@ -40,7 +40,7 @@ const Navbar = () => {
                 to={link.href}
                 className={`text-lg text-slate-gray font-montserrat leading-normal mr-4 ${
                   location.pathname === link.href
-                    ? "text-purple-600 font-semibold"
+                    ? "text-purple-500 font-semibold"
                     : ""
                 }`}
                 onClick={closeMenu}
@@ -107,7 +107,7 @@ const Navbar = () => {
                     to={link.href}
                     className={`block px-4 py-2 hover:bg-gray-200 text-slate-gray font-montserrat border-b-2 text-lg  leading-normal ${
                       location.pathname === link.href
-                        ? "text-purple-600 font-semibold"
+                        ? "text-purple-500 font-semibold"
                         : ""
                     }`}
                     onClick={closeMenu}

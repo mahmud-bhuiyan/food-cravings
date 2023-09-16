@@ -23,7 +23,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="max-container my-10">
+    <div className="max-container m-10">
       <Helmet>
         <title>Contact | Food Cravings</title>
       </Helmet>
@@ -129,7 +129,7 @@ const Contact = () => {
         </div>
       </div>
       <Newsletter />
-    </section>
+    </div>
   );
 };
 
