@@ -1,30 +1,144 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { CrossIcon, Hamburger } from "../assets/icons";
 import headerLogo from "../assets/food-cravings.png";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa6";
 import { Link, useLocation } from "react-router-dom";
+import { AuthContext } from "../providers/AuthProvider";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const location = useLocation();
+  console.log(location.pathname);
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
 
-  const closeMenu = () => {
-    setShowMenu(false);
+  const { user, logout } = useContext(AuthContext);
+
+  const handleLogOut = () => {
+    logout()
+      .then(() => {
+        console.log("Sign-out successful");
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
   };
 
-  const navLinks = [
-    { href: "/", label: "Home" },
-    { href: "/recipes", label: "Recipes" },
-    { href: "/chefs", label: "Chefs" },
-    { href: "/blogs", label: "Blogs" },
-    { href: "/contact", label: "Contact" },
-    { href: "/about", label: "About us" },
-    // { href: "/sign-up", label: "Sign Up" },
-    { href: "/login", label: "Login" },
-  ];
+  const commonLinkStyles = "text-lg font-montserrat leading-normal";
+
+  const navLinks = (
+    <>
+      <li>
+        <Link
+          to="/"
+          className={`${commonLinkStyles} ${
+            location.pathname === "/"
+              ? "text-purple-500 font-semibold border-b-2 border-purple-500"
+              : ""
+          }`}
+        >
+          Home
+        </Link>
+      </li>
+      <li>
+        <Link
+          to="/recipes"
+          className={`${commonLinkStyles} ${
+            location.pathname === "/recipes"
+              ? "text-purple-500 font-semibold border-b-2 border-purple-500"
+              : ""
+          }`}
+        >
+          Recipes
+        </Link>
+      </li>
+      <li>
+        <Link
+          to="/chefs"
+          className={`${commonLinkStyles} ${
+            location.pathname === "/chefs"
+              ? "text-purple-500 font-semibold border-b-2 border-purple-500"
+              : ""
+          }`}
+        >
+          Chefs
+        </Link>
+      </li>
+      <li>
+        <Link
+          to="/blogs"
+          className={`${commonLinkStyles} ${
+            location.pathname === "/blogs"
+              ? "text-purple-500 font-semibold border-b-2 border-purple-500"
+              : ""
+          }`}
+        >
+          Blogs
+        </Link>
+      </li>
+      <li>
+        <Link
+          to="/contact"
+          className={`${commonLinkStyles} ${
+            location.pathname === "/contact"
+              ? "text-purple-500 font-semibold border-b-2 border-purple-500"
+              : ""
+          }`}
+        >
+          Contact
+        </Link>
+      </li>
+      <li>
+        <Link
+          to="/about"
+          className={`${commonLinkStyles} ${
+            location.pathname === "/about"
+              ? "text-purple-500 font-semibold border-b-2 border-purple-500"
+              : ""
+          }`}
+        >
+          About us
+        </Link>
+      </li>
+      {user ? (
+        <>
+          <li>
+            <Link onClick={handleLogOut} className={commonLinkStyles}>
+              Logout
+            </Link>
+          </li>
+        </>
+      ) : (
+        <>
+          <li>
+            <Link
+              to="/login"
+              className={`${commonLinkStyles} ${
+                location.pathname === "/login"
+                  ? "text-purple-500 font-semibold border-b-2 border-purple-500"
+                  : ""
+              }`}
+            >
+              Login
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/signup"
+              className={`${commonLinkStyles} ${
+                location.pathname === "/signup"
+                  ? "text-purple-500 font-semibold border-b-2 border-purple-500"
+                  : ""
+              }`}
+            >
+              Sign Up
+            </Link>
+          </li>
+        </>
+      )}
+    </>
+  );
 
   return (
     <header className="padding-x w-full pt-5 pb-4 fixed z-10 bg-white">
@@ -34,21 +148,7 @@ const Navbar = () => {
         </Link>
 
         <ul className="flex flex-1 justify-center items-center max-lg:hidden gap-4">
-          {navLinks?.map((link, index) => (
-            <li key={index}>
-              <Link
-                to={link.href}
-                className={`text-lg text-slate-gray font-montserrat leading-normal mr-4 ${
-                  location.pathname === link.href
-                    ? "text-purple-500 font-semibold"
-                    : ""
-                }`}
-                onClick={closeMenu}
-              >
-                {link.label}
-              </Link>
-            </li>
-          ))}
+          {navLinks}
         </ul>
 
         <div className="flex justify-center items-center max-lg:hidden gap-4">
@@ -100,23 +200,7 @@ const Navbar = () => {
 
         {showMenu && (
           <div className="bg-white absolute top-20 right-0 mt-2 w-44 mr-4 shadow-lg rounded text-center border lg:hidden">
-            <ul>
-              {navLinks.map((link, index) => (
-                <li key={index}>
-                  <Link
-                    to={link.href}
-                    className={`block px-4 py-2 hover:bg-gray-200 text-slate-gray font-montserrat border-b-2 text-lg  leading-normal ${
-                      location.pathname === link.href
-                        ? "text-purple-500 font-semibold"
-                        : ""
-                    }`}
-                    onClick={closeMenu}
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <ul>{navLinks}</ul>
           </div>
         )}
       </nav>

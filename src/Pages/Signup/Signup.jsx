@@ -1,27 +1,35 @@
 import { Helmet } from "react-helmet-async";
 // import { FcGoogle } from "react-icons/fc";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { FaEnvelope, FaLock, FaRegEye, FaRegEyeSlash } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaLock,
+  FaRegEye,
+  FaRegEyeSlash,
+  FaUserAlt,
+} from "react-icons/fa";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 import Swal from "sweetalert2";
-import loginImg from "../../assets/signup.jpg";
+import { useForm } from "react-hook-form";
 
-const Login = () => {
-  const { signIn } = useContext(AuthContext);
+const Signup = () => {
+  const { createUser } = useContext(AuthContext);
   const [error, setError] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
   const from = location.state?.from?.pathname || "/";
 
-  const handleLogin = (e) => {
-    e.preventDefault();
-    const form = e.target;
-    const email = form.email.value;
-    const password = form.password.value;
-    console.log(email, password);
-    signIn(email, password)
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = (data) => {
+    createUser(data.email, data.password)
       .then((result) => {
         const user = result.user;
         console.log(user);
@@ -51,19 +59,39 @@ const Login = () => {
   return (
     <div className="max-container">
       <Helmet>
-        <title>Login | Food Cravings</title>
+        <title>Sign Up | Food Cravings</title>
       </Helmet>
       <div className="hero min-h-screen -mt-10">
         <div className="hero-content grid grid-cols-1 md:grid-cols-2">
           <div className="mb-12 md:mb-0">
-            <img src={loginImg} className="w-full" alt="image" />
+            <img
+              src="https://tecdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+              className="w-full"
+              alt="image"
+            />
           </div>
           <div className="w-full max-w-sm mx-auto border rounded-md shadow-lg">
-            <form onSubmit={handleLogin}>
+            <form onSubmit={handleSubmit(onSubmit)}>
               <div className="card-body">
                 <h2 className="font-bold font-montserrat text-lg md:text-3xl text-center underline mb-4">
-                  Login
+                  Sign Up
                 </h2>
+
+                {/* name */}
+                <div className="form-control relative mt-3">
+                  <span className="absolute left-3 top-1/2 transform -translate-y-1/2">
+                    <FaUserAlt className="text-dark/75 dark:text-light/75" />
+                  </span>
+                  <input
+                    type="text"
+                    {...register("name", { required: true })}
+                    name="name"
+                    placeholder="Your name"
+                    className="border-dark/50  dark:border-light/50 border-b-2 pl-10 py-2 w-full bg-transparent outline-none focus:border-b-2"
+                    autoComplete="off"
+                    required
+                  />
+                </div>
 
                 {/* email */}
                 <div className="form-control relative mt-3">
@@ -72,6 +100,7 @@ const Login = () => {
                   </span>
                   <input
                     type="email"
+                    {...register("email", { required: true })}
                     name="email"
                     placeholder="Your Email"
                     className="border-dark/50  dark:border-light/50 border-b-2 pl-10 py-2 w-full bg-transparent outline-none focus:border-b-2"
@@ -88,6 +117,11 @@ const Login = () => {
                   <input
                     type={showPassword ? "text" : "password"}
                     name="password"
+                    {...register("password", {
+                      required: true,
+                      minLength: 6,
+                      maxLength: 20,
+                    })}
                     placeholder="Password"
                     className="border-dark/50  dark:border-light/50 border-b-2 pl-10 py-2 w-full bg-transparent outline-none focus:border-b-2"
                     autoComplete="off"
@@ -110,14 +144,14 @@ const Login = () => {
                   <input
                     className="btn btn-sm text-white hover:bg-purple-800 hover:text-dark bg-purple-500 transition duration-3000 border-0"
                     type="submit"
-                    value="Login"
+                    value="Sign Up"
                   />
                 </div>
 
                 <p className="text-center my-4">
-                  New to Food Cravings?{" "}
-                  <Link to="/signup" className="text-orange-600 font-bold">
-                    Sign Up
+                  Already have an account?{" "}
+                  <Link to="/login" className="text-orange-600 font-bold">
+                    Login
                   </Link>
                 </p>
               </div>
@@ -129,4 +163,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Signup;
