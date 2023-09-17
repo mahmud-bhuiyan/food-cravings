@@ -11,6 +11,7 @@ const Login = () => {
   const { signIn } = useContext(AuthContext);
   const [error, setError] = useState("");
   const [showPassword, setShowPassword] = useState(false);
+
   const navigate = useNavigate();
   const location = useLocation();
   const from = location.state?.from?.pathname || "/";
@@ -20,7 +21,7 @@ const Login = () => {
     const form = e.target;
     const email = form.email.value;
     const password = form.password.value;
-    console.log(email, password);
+
     signIn(email, password)
       .then((result) => {
         const user = result.user;
@@ -32,7 +33,6 @@ const Login = () => {
           showConfirmButton: false,
           timer: 1500,
         });
-        // reset();
         navigate(from, { replace: true });
       })
       .catch((error) => {
@@ -114,12 +114,16 @@ const Login = () => {
                   />
                 </div>
 
-                <p className="text-center my-4">
+                <p className="text-center mt-4">
                   New to Food Cravings?{" "}
                   <Link to="/signup" className="text-orange-600 font-bold">
                     Sign Up
                   </Link>
                 </p>
+                <div className="divider">OR</div>
+                <div>
+                  <p>{error}</p>
+                </div>
               </div>
             </form>
           </div>

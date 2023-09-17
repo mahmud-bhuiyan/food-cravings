@@ -8,7 +8,7 @@ import { AuthContext } from "../providers/AuthProvider";
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const location = useLocation();
-  console.log(location.pathname);
+
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
@@ -200,7 +200,7 @@ const Navbar = () => {
 
         {showMenu && (
           <div className="bg-white absolute top-20 right-0 mt-2 w-44 mr-4 shadow-lg rounded text-center border lg:hidden">
-            <ul>{navLinks}</ul>
+            <ul className="">{navLinks}</ul>
           </div>
         )}
       </nav>

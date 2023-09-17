@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet-async";
-// import { FcGoogle } from "react-icons/fc";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import {
   FaEnvelope,
@@ -7,6 +6,7 @@ import {
   FaRegEye,
   FaRegEyeSlash,
   FaUserAlt,
+  FaUserCircle,
 } from "react-icons/fa";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
@@ -21,12 +21,7 @@ const Signup = () => {
   const location = useLocation();
   const from = location.state?.from?.pathname || "/";
 
-  const {
-    register,
-    handleSubmit,
-    watch,
-    formState: { errors },
-  } = useForm();
+  const { register, handleSubmit } = useForm();
 
   const onSubmit = (data) => {
     createUser(data.email, data.password)
@@ -36,7 +31,7 @@ const Signup = () => {
         Swal.fire({
           position: "top-end",
           icon: "success",
-          title: "Login Successful!",
+          title: "Signup Successful!",
           showConfirmButton: false,
           timer: 1500,
         });
@@ -51,7 +46,6 @@ const Signup = () => {
             : errorCode === "auth/user-not-found"
             ? "No user found with this email"
             : error.message;
-        console.log(errorMessage);
         setError(errorMessage);
       });
   };
@@ -139,6 +133,22 @@ const Signup = () => {
                   </div>
                 </div>
 
+                {/* photo */}
+                {/* <div className="form-control relative mt-3">
+                  <span className="absolute left-3 top-1/2 transform -translate-y-1/2">
+                    <FaUserCircle className="text-dark/75 dark:text-light/75" />
+                  </span>
+                  <input
+                    type="email"
+                    {...register("photo", { required: true })}
+                    name="photo"
+                    placeholder="Your Photo"
+                    className="border-dark/50  dark:border-light/50 border-b-2 pl-10 py-2 w-full bg-transparent outline-none focus:border-b-2"
+                    autoComplete="off"
+                    required
+                  />
+                </div> */}
+
                 {/* btn  */}
                 <div className="form-control mt-6">
                   <input
@@ -148,12 +158,16 @@ const Signup = () => {
                   />
                 </div>
 
-                <p className="text-center my-4">
+                <p className="text-center mt-4">
                   Already have an account?{" "}
                   <Link to="/login" className="text-orange-600 font-bold">
                     Login
                   </Link>
                 </p>
+                <div className="divider">OR</div>
+                <div>
+                  <p>{error}</p>
+                </div>
               </div>
             </form>
           </div>

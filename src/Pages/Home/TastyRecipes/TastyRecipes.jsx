@@ -10,7 +10,6 @@ const TastyRecipes = () => {
       .then((res) => res.json())
       .then((data) => {
         setRecipes(data);
-        console.log(data);
       })
       .catch((error) => console.log(error));
   }, []);
